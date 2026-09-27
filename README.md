@@ -10,7 +10,7 @@ It's a web app (PWA). Open it on a phone, "Add to Home Screen", and it behaves l
 
 ## How scanning works (free, offline)
 
-The app ships with its own card database: every card from the Scarlet & Violet, Mega Evolution and Sword & Shield eras (about 10k cards), each with a tiny image fingerprint. Scanning a card:
+The app ships with its own card database: every card from the Scarlet & Violet, Mega Evolution and Sword & Shield eras (8,637 cards, about 4 MB), each with a tiny image fingerprint. Scanning a card:
 
 1. **Match the picture.** The camera frame is fingerprinted (15 slightly shifted crops, so sloppy placement is fine) and compared against every card on the device. Lighting and colour casts are normalised away. A clear winner is added immediately.
 2. **Break ties with text.** Reprints share artwork (Ultra Ball, Iono…), so when the top matches are too close, on-device OCR reads the collector number (`130/167`) and name to pick the exact printing. If it still can't tell, it keeps the name (all deck-building cares about) and guesses the printing.
@@ -18,7 +18,7 @@ The app ships with its own card database: every card from the Scarlet & Violet, 
 
 No accounts, no API keys, no per-scan cost. If the app isn't sure, it asks ("Is this it?") instead of adding the wrong card.
 
-In testing on synthetic cards with harsh lighting, glare, noise and off-centre placement, the picture match picked the right card out of 400 look-alikes 100% of the time. Real cards (holo foil, sleeves, top-loaders) will be harder; add `?debug` to the URL to see match scores in the browser console if something misreads.
+Accuracy, measured by `npm run eval` on 300 real card images from TCGdex turned into simulated phone photos (dim warm light, colour cast, noise, glare, off-centre) and matched against the full index: **299/300 identified by name with no wrong cards added** (96% exact printing on the picture alone; OCR on the collector number handles most of the rest in the app). Cards from eras outside the index were never auto-added as a wrong card. Real photos (holo foil, sleeves, top-loaders) are harder than simulated ones; add `?debug` to the URL to see match scores in the browser console if something misreads.
 
 The index is built by `npm run index` (runs in CI; incremental, so after the first run it only downloads newly released cards). Pick eras with `SERIES=sv,me,swsh`.
 

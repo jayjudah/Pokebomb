@@ -21,11 +21,11 @@ const { decideFromImage, decideWithOcr } = await import("../src/lib/matchDecisio
 const { normalizeName } = await import("../src/lib/text");
 
 const SAMPLE = Number(process.env.EVAL_SAMPLE ?? 300);
-const SWEEP: [accept: number, margin: number][] = [[0.7, 0.1], [0.75, 0.1], [0.8, 0.1], [0.8, 0.06], [0.85, 0.06]];
+const SWEEP: [accept: number, margin: number][] = [[0.75, 0.08], [0.8, 0.08], [0.85, 0.08]];
 type Hits = ReturnType<typeof searchImage>;
 const inRuns: { id: string; name: string; hits: Hits }[] = [];
 const outRuns: { name: string; hits: Hits }[] = [];
-const OUTSIDE = Number(process.env.EVAL_OUTSIDE ?? 100);
+const OUTSIDE = Number(process.env.EVAL_OUTSIDE ?? 150);
 
 async function photo(imageUrl: string, seed: number) {
   const res = await realFetch(`${imageUrl}/low.webp`);

@@ -2,11 +2,13 @@
 import type { IndexCard, ImageHit } from "./cardIndex";
 import { normalizeName, similarity } from "./text";
 
-// Thresholds on cosine similarity, from the synthetic photo tests: correct
-// matches scored 0.73+ (10th percentile) and beat the runner-up by 0.18+,
-// while an empty table scores below 0.4.
-export const IMAGE_ACCEPT = 0.7;
-export const IMAGE_MARGIN = 0.1;
+// Thresholds on cosine similarity, tuned with `npm run eval` on real TCGdex
+// images turned into simulated phone photos: the true card scored 0.84+
+// (10th percentile, median 0.91), while cards from eras outside the index
+// topped out at 0.81. At 0.8 / 0.08: 299/300 right, 0 wrong auto-adds, and
+// no wrong auto-adds for cards outside the index. An empty table scores ~0.
+export const IMAGE_ACCEPT = 0.8;
+export const IMAGE_MARGIN = 0.08;
 export const IMAGE_PLAUSIBLE = 0.5;
 const TIE = 0.06; // candidates this close to the leader are "the same picture"
 
