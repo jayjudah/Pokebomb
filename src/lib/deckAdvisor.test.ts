@@ -82,6 +82,25 @@ describe("rankDecks", () => {
     expect(isLegal(owned("A", 1, { regulationMark: "I", legalStandard: false }), DEFAULT_OPTIONS)).toBe(false);
   });
 
+  it("finds the star Pokémon from Limitless-style deck names", () => {
+    const deck: MetaDeck = {
+      ...dragapult,
+      id: "ogerpon",
+      name: "Ogerpon Meganium",
+      list: [
+        { count: 3, name: "Teal Mask Ogerpon ex", category: "Pokemon", inclusion: 1 },
+        { count: 2, name: "Chikorita", category: "Pokemon", inclusion: 1 },
+        { count: 2, name: "Meganium", category: "Pokemon", inclusion: 1 },
+        { count: 53, name: "Grass Energy", category: "Energy", inclusion: 1 },
+      ],
+    };
+    expect(rankDecks([deck], [owned("Teal Mask Ogerpon ex", 3), owned("Chikorita", 2)])[0].missingStar).toBe(true);
+    expect(
+      rankDecks([deck], [owned("Teal Mask Ogerpon ex", 1), owned("Meganium", 1)])[0].missingStar,
+    ).toBe(false);
+    expect(rankDecks([{ ...dragapult, name: "Dragapult" }], [])[0].missingStar).toBe(true);
+  });
+
   it("merges copies across printings", () => {
     const collection = [owned("Dreepy", 2, { id: "a" }), owned("Dreepy", 2, { id: "b" })];
     const [plan] = rankDecks([dragapult], collection);
