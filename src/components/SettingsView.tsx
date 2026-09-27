@@ -1,6 +1,7 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { exportCsv, exportJson, parseImport, replaceCollection, useCollection } from "../lib/collection";
 import { updateSettings, useSettings } from "../lib/settings";
+import { indexSize, loadIndex } from "../lib/cardIndex";
 
 function download(name: string, text: string, type: string) {
   const url = URL.createObjectURL(new Blob([text], { type }));
@@ -16,6 +17,10 @@ export default function SettingsView() {
   const cards = useCollection();
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState("");
+  const [indexed, setIndexed] = useState(indexSize());
+  useEffect(() => {
+    void loadIndex().then(() => setIndexed(indexSize()));
+  }, []);
   const date = new Date().toISOString().slice(0, 10);
 
   return (
@@ -27,17 +32,18 @@ export default function SettingsView() {
       <section>
         <h2>Scanning</h2>
         <label className="radio">
-          <input type="radio" checked={s.engine === "ocr"} onChange={() => updateSettings({ engine: "ocr" })} />
+          <input type="radio" checked={s.engine === "free"} onChange={() => updateSettings({ engine: "free" })} />
           <span>
-            <b>On-device</b> (free, works offline). Reads the name and the number at the bottom. Struggles with glare
-            and some full-art cards.
+            <b>Free</b> (recommended). Matches the card's picture against{" "}
+            {indexed ? `${indexed.toLocaleString()} cards stored on this device` : "the offline card database"}, and reads
+            the name and number to tell reprints apart. Works offline.
           </span>
         </label>
         <label className="radio">
           <input type="radio" checked={s.engine === "claude"} onChange={() => updateSettings({ engine: "claude" })} />
           <span>
-            <b>AI scan</b> with Claude. Much more reliable on holos and full arts. Uses your Anthropic API key and costs
-            a fraction of a cent per card.
+            <b>AI scan</b> (optional, paid). Sends a photo of each card to Claude. Only worth it if free scanning
+            struggles with your cards. Needs an Anthropic API key and costs a fraction of a cent per card.
           </span>
         </label>
         <label className="field">

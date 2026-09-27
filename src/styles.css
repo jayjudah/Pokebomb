@@ -108,9 +108,7 @@ h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: 
   justify-content: space-between;
   gap: 8px;
 }
-.engine-toggle { display: flex; background: rgba(0, 0, 0, 0.55); border-radius: 12px; padding: 3px; }
-.engine-toggle button { background: none; color: #ddd; padding: 6px 10px; font-size: 14px; }
-.engine-toggle button.on { background: var(--accent); color: #111; }
+.engine-chip { align-self: center; background: rgba(0, 0, 0, 0.55); color: #eee; border-radius: 999px; padding: 6px 12px; font-size: 13px; }
 .scan-tools { display: flex; gap: 6px; }
 .icon-btn { background: rgba(0, 0, 0, 0.55); color: #fff; width: 40px; height: 40px; padding: 0; font-size: 18px; }
 .status {

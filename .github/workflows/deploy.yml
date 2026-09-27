@@ -19,6 +19,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -33,13 +34,18 @@ jobs:
         env:
           LIMITLESS_API_KEY: ${{ secrets.LIMITLESS_API_KEY }}
         run: npm run meta
-      - name: Commit meta.json
+      - name: Update offline card index
+        # Incremental: only cards released since the last run get downloaded.
+        # The first run fetches ~10k card images and takes a while.
+        continue-on-error: true
+        run: npm run index
+      - name: Commit data updates
         run: |
-          if ! git diff --quiet public/meta.json; then
+          git add public/meta.json public/card-index
+          if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/meta.json
-            git commit -m "Update meta snapshot"
+            git commit -m "Update meta snapshot and card index"
             git push
           fi
       - run: npm run build

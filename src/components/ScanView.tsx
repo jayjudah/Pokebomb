@@ -1,8 +1,9 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { CardScanner, computeGuide, type Rect, type ScanStatus } from "../lib/scanner";
-import { addCard, setQty, getCollection } from "../lib/collection";
+import { addCard, enrichCard, setQty, getCollection } from "../lib/collection";
+import { indexSize, loadIndex } from "../lib/cardIndex";
 import { imageUrl, type Match } from "../lib/cardDb";
-import { getSettings, updateSettings, useSettings } from "../lib/settings";
+import { getSettings, useSettings } from "../lib/settings";
 import { chirp } from "../lib/feedback";
 import type { CardInfo } from "../lib/types";
 import CardSearch from "./CardSearch";
@@ -32,9 +33,11 @@ export default function ScanView() {
   const [suggestion, setSuggestion] = useState<Match | null>(null);
   const [torch, setTorch] = useState(false);
   const [searching, setSearching] = useState(false);
+  const [indexed, setIndexed] = useState(indexSize());
 
   function added(card: CardInfo) {
-    addCard(card);
+    const owned = addCard(card);
+    if (owned.price === undefined) void enrichCard(card.id);
     setRecent((r) => [{ key: Date.now() + Math.random(), card }, ...r].slice(0, 30));
     if (getSettings().sound) chirp(true);
   }
@@ -63,6 +66,7 @@ export default function ScanView() {
 
   useEffect(() => {
     if (scannerRef.current) scannerRef.current.options = { engine: settings.engine, claudeApiKey: settings.claudeApiKey };
+    if (settings.engine === "free") void loadIndex().then(() => setIndexed(indexSize()));
   }, [settings.engine, settings.claudeApiKey]);
 
   // Keep the on-screen frame in sync with the region the scanner reads.
@@ -98,19 +102,12 @@ export default function ScanView() {
           />
         )}
         <div className="scan-top">
-          <div className="engine-toggle">
-            <button
-              className={settings.engine === "ocr" ? "on" : ""}
-              onClick={() => updateSettings({ engine: "ocr" })}
-            >
-              On-device
-            </button>
-            <button
-              className={settings.engine === "claude" ? "on" : ""}
-              onClick={() => updateSettings({ engine: "claude" })}
-            >
-              AI scan
-            </button>
+          <div className="engine-chip">
+            {settings.engine === "claude"
+              ? "AI scan"
+              : indexed
+                ? `${indexed.toLocaleString()} cards on device`
+                : "Text reading only"}
           </div>
           <div className="scan-tools">
             <button

@@ -2,6 +2,7 @@
 // between phones (or backs it up).
 import { get, set } from "idb-keyval";
 import { useSyncExternalStore } from "react";
+import { getCard } from "./cardDb";
 import type { CardInfo, OwnedCard } from "./types";
 
 const KEY = "collection-v1";
@@ -42,6 +43,21 @@ export function addCard(card: CardInfo, qty = 1): OwnedCard {
   }
   emit();
   return cards.find((c) => c.id === card.id)!;
+}
+
+/**
+ * Fill in price, legality and rarity from TCGdex after an offline scan.
+ * Best effort: without a connection the card just keeps what the index knew.
+ */
+export async function enrichCard(id: string) {
+  try {
+    const full = await getCard(id);
+    if (!cards.some((c) => c.id === id)) return;
+    cards = cards.map((c) => (c.id === id ? { ...c, ...full, qty: c.qty, addedAt: c.addedAt } : c));
+    emit();
+  } catch {
+    /* offline */
+  }
 }
 
 export function setQty(id: string, qty: number) {

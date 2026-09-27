@@ -1,7 +1,8 @@
 import { useSyncExternalStore } from "react";
 import { DEFAULT_OPTIONS, type AdvisorOptions } from "./deckAdvisor";
 
-export type ScanEngine = "ocr" | "claude";
+/** "free": image match + OCR, on device. "claude": optional paid AI read. */
+export type ScanEngine = "free" | "claude";
 
 export interface Settings extends AdvisorOptions {
   engine: ScanEngine;
@@ -10,11 +11,13 @@ export interface Settings extends AdvisorOptions {
 }
 
 const KEY = "pokebomb-settings";
-const DEFAULTS: Settings = { ...DEFAULT_OPTIONS, engine: "ocr", claudeApiKey: "", sound: true };
+const DEFAULTS: Settings = { ...DEFAULT_OPTIONS, engine: "free", claudeApiKey: "", sound: true };
 
 function load(): Settings {
   try {
-    return { ...DEFAULTS, ...JSON.parse(localStorage.getItem(KEY) ?? "{}") };
+    const saved = { ...DEFAULTS, ...JSON.parse(localStorage.getItem(KEY) ?? "{}") };
+    if (saved.engine !== "claude") saved.engine = "free"; // "ocr" from older versions
+    return saved;
   } catch {
     return DEFAULTS;
   }

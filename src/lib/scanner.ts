@@ -1,10 +1,16 @@
 // Continuous scanning. The camera runs the whole time; we watch for motion
 // inside the card guide, wait for the picture to settle (a new card slid in),
-// read it, then ignore the frame until something moves again. That's what
+// identify it, then ignore the frame until something moves again. That's what
 // lets you feed a stack of cards through one after another, including
 // duplicates of the same card.
+//
+// Identification (free engine): match the picture against the offline card
+// index first. A clear winner is added straight away; a close call (reprints
+// share artwork) is settled by OCR reading the name and collector number.
 import { createWorker, PSM, type Worker } from "tesseract.js";
 import { resolveCard, type Match } from "./cardDb";
+import { indexSize, loadIndex, queriesFor, searchImage, setOfficialCount, toCardInfo, type ImageHit } from "./cardIndex";
+import { decideFromImage, decideWithOcr, type OcrRead } from "./matchDecision";
 import { parseCollectorNumber, parseName } from "./ocrParse";
 import type { ScanEngine } from "./settings";
 
@@ -18,6 +24,8 @@ const OCR_ATTEMPTS = 4;
 const AUTO_ADD_CONFIDENCE = 0.7;
 // Add ?debug to the URL to log what the OCR sees.
 const DEBUG = typeof location !== "undefined" && location.search.includes("debug");
+const IMAGE_MARGIN = 0.06; // extra border grabbed around the guide for shifted crops
+const IMAGE_CANVAS_W = 272;
 
 export interface Rect {
   x: number;
@@ -73,6 +81,7 @@ export class CardScanner {
   private sawText = false; // OCR found something readable this settle
   private nameWorker: Worker | null = null;
   private numberWorker: Worker | null = null;
+  private ocrLoading: Promise<void> | null = null;
   private thumbCanvas = document.createElement("canvas");
   private workCanvas = document.createElement("canvas");
 
@@ -105,7 +114,12 @@ export class CardScanner {
     this.video.srcObject = this.stream;
     this.video.setAttribute("playsinline", "true");
     await this.video.play().catch(() => {});
-    if (this.options.engine === "ocr") await this.ensureOcr();
+    if (this.options.engine === "free") {
+      this.cb.onStatus("starting", "Loading card database…");
+      await loadIndex();
+      // The text reader is only a tie-breaker now; warm it up in the background.
+      void this.ensureOcr().catch(() => {});
+    }
     if (!this.running) return;
     this.cb.onStatus("waiting");
     this.loop();
@@ -119,6 +133,7 @@ export class CardScanner {
     void this.nameWorker?.terminate();
     void this.numberWorker?.terminate();
     this.nameWorker = this.numberWorker = null;
+    this.ocrLoading = null;
   }
 
   /** Scan the same card again (e.g. a second copy that didn't trigger motion). */
@@ -140,9 +155,15 @@ export class CardScanner {
     }
   }
 
-  private async ensureOcr() {
-    if (this.nameWorker) return;
-    this.cb.onStatus("starting", "Loading text reader…");
+  private ensureOcr(): Promise<void> {
+    this.ocrLoading ??= this.loadOcr().catch((err) => {
+      this.ocrLoading = null;
+      throw err;
+    });
+    return this.ocrLoading;
+  }
+
+  private async loadOcr() {
     const [nameW, numW] = await Promise.all([createWorker("eng"), createWorker("eng")]);
     await nameW.setParameters({ tessedit_pageseg_mode: PSM.SPARSE_TEXT });
     await numW.setParameters({
@@ -217,11 +238,11 @@ export class CardScanner {
     this.busy = true;
     this.cb.onStatus("reading");
     try {
-      const match = this.options.engine === "claude" ? await this.readClaude(g) : await this.readOcr(g);
+      const match = this.options.engine === "claude" ? await this.readClaude(g) : await this.readFree(g);
       this.attempts++;
       if (match && match.confidence >= AUTO_ADD_CONFIDENCE) {
-        // OCR has to agree with itself twice unless it's very sure.
-        const agreed = this.options.engine === "claude" || match.confidence >= 0.9 || this.lastRead === match.card.id;
+        // Shakier reads have to agree with themselves twice.
+        const agreed = this.options.engine === "claude" || match.confidence >= 0.8 || this.lastRead === match.card.id;
         this.lastRead = match.card.id;
         if (agreed) {
           this.handled = true;
@@ -237,6 +258,7 @@ export class CardScanner {
         return;
       }
       const maxAttempts = this.options.engine === "claude" ? 1 : OCR_ATTEMPTS;
+      if (DEBUG) console.log("[scan] no match, attempt", this.attempts);
       if (this.attempts >= maxAttempts) {
         this.handled = true;
         this.emptyThumb = thumb;
@@ -280,18 +302,59 @@ export class CardScanner {
     return c;
   }
 
-  private async readOcr(g: Rect): Promise<Match | null> {
+  /** Fingerprint the card in the guide (several crops) and search the index. */
+  private imageSearch(g: Rect): ImageHit[] {
+    const m = IMAGE_MARGIN;
+    const region = { x: g.x - m * g.w, y: g.y - m * g.h, w: g.w * (1 + 2 * m), h: g.h * (1 + 2 * m) };
+    const c = this.workCanvas;
+    c.width = IMAGE_CANVAS_W;
+    c.height = Math.round((IMAGE_CANVAS_W * region.h) / region.w);
+    const ctx = c.getContext("2d", { willReadFrequently: true })!;
+    ctx.clearRect(0, 0, c.width, c.height);
+    ctx.drawImage(this.video, region.x, region.y, region.w, region.h, 0, 0, c.width, c.height);
+    const px = ctx.getImageData(0, 0, c.width, c.height).data;
+    const k = c.width / region.w;
+    const guide = { x: m * g.w * k, y: m * g.h * k, w: g.w * k, h: g.h * k };
+    return searchImage(queriesFor(px, c.width, c.height, guide));
+  }
+
+  private async readFree(g: Rect): Promise<Match | null> {
+    let hits: ImageHit[] = [];
+    if (indexSize()) {
+      hits = this.imageSearch(g);
+      if (DEBUG) console.log("[scan:image]", hits.slice(0, 3).map((h) => `${h.card.id} ${h.card.name} ${h.score.toFixed(3)}`).join(" | "));
+      const quick = decideFromImage(hits);
+      if (quick) {
+        this.sawText = true;
+        return { card: toCardInfo(quick.card), confidence: quick.confidence };
+      }
+    }
+    const ocr = await this.ocrRead(g);
+    if (ocr.name || ocr.number) this.sawText = true;
+    const byImage = decideWithOcr(hits, ocr, setOfficialCount);
+    if (DEBUG && byImage) console.log("[scan:decide]", byImage.why, byImage.card.id);
+    if (byImage && byImage.confidence >= AUTO_ADD_CONFIDENCE) {
+      this.sawText = true;
+      return { card: toCardInfo(byImage.card), confidence: byImage.confidence };
+    }
+    // Picture didn't settle it (or the card is newer than the index): go by the text.
+    const byText = ocr.name || ocr.number ? await resolveCard(ocr) : null;
+    if (byImage && (!byText || byText.confidence < byImage.confidence)) {
+      return { card: toCardInfo(byImage.card), confidence: byImage.confidence };
+    }
+    return byText;
+  }
+
+  private async ocrRead(g: Rect): Promise<OcrRead> {
     await this.ensureOcr();
-    if (!this.nameWorker || !this.numberWorker) return null;
+    if (!this.nameWorker || !this.numberWorker) return {};
     // Name band across the top; collector number in the bottom-left corner.
-    const nameText = (await this.nameWorker!.recognize(this.crop(g, 0.03, 0.02, 0.74, 0.14, 1000))).data.text;
-    const numText = (await this.numberWorker!.recognize(this.crop(g, 0.0, 0.875, 0.55, 0.11, 1100))).data.text;
+    const nameText = (await this.nameWorker.recognize(this.crop(g, 0.03, 0.02, 0.74, 0.14, 1000))).data.text;
+    const numText = (await this.numberWorker.recognize(this.crop(g, 0.0, 0.875, 0.55, 0.11, 1100))).data.text;
     const name = parseName(nameText);
     const num = parseCollectorNumber(numText);
-    if (DEBUG) console.log("[scan]", JSON.stringify({ nameText, numText, name, num }));
-    if (!name && !num) return null;
-    this.sawText = true;
-    return resolveCard({ name, number: num?.number, total: num?.total });
+    if (DEBUG) console.log("[scan:ocr]", JSON.stringify({ nameText, numText, name, num }));
+    return { name: name || undefined, number: num?.number, total: num?.total };
   }
 
   private async readClaude(g: Rect): Promise<Match | null> {

@@ -36,6 +36,12 @@ export default defineConfig({
             options: { cacheName: "meta" },
           },
           {
+            // Offline card database. Network first so updates land; cached for offline.
+            urlPattern: /\/card-index\//,
+            handler: "NetworkFirst",
+            options: { cacheName: "card-index", networkTimeoutSeconds: 4 },
+          },
+          {
             // Tesseract's engine + English data (~15 MB) load from jsDelivr on
             // first scan; keep them so scanning works offline afterwards.
             urlPattern: /^https:\/\/cdn\.jsdelivr\.net\/npm\/(tesseract|@tesseract)/,

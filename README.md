@@ -8,20 +8,23 @@ Scan a Pokémon card collection with your phone camera, then find out which comp
 
 It's a web app (PWA). Open it on a phone, "Add to Home Screen", and it behaves like a native app, including offline use after the first load.
 
-## How scanning works
+## How scanning works (free, offline)
 
-Two engines, switchable on the scan screen:
+The app ships with its own card database: every card from the Scarlet & Violet, Mega Evolution and Sword & Shield eras (about 10k cards), each with a tiny image fingerprint. Scanning a card:
 
-| | On-device (default) | AI scan |
-|---|---|---|
-| How | Tesseract OCR reads the name (top) and collector number (bottom left, e.g. `130/167`) | Sends one still photo of the card to Claude |
-| Cost | Free | Your Anthropic API key, a fraction of a cent per card |
-| Offline | Yes, after first use | No |
-| Good at | Regular cards in decent light | Holos, full arts, glare, odd layouts |
+1. **Match the picture.** The camera frame is fingerprinted (15 slightly shifted crops, so sloppy placement is fine) and compared against every card on the device. Lighting and colour casts are normalised away. A clear winner is added immediately.
+2. **Break ties with text.** Reprints share artwork (Ultra Ball, Iono…), so when the top matches are too close, on-device OCR reads the collector number (`130/167`) and name to pick the exact printing. If it still can't tell, it keeps the name (all deck-building cares about) and guesses the printing.
+3. **Fill in details.** Price and legality come from [TCGdex](https://tcgdex.dev) in the background when online.
 
-Either way, the name and number get matched against [TCGdex](https://tcgdex.dev). The number's denominator (`/167`) narrows it to a few sets and the name picks the right one. If the app isn't sure, it asks ("Is this it?") instead of adding the wrong card.
+No accounts, no API keys, no per-scan cost. If the app isn't sure, it asks ("Is this it?") instead of adding the wrong card.
 
-Tips: good even light, avoid glare on the bottom strip, fill the frame. A cheap phone stand makes the "slide cards through" flow much nicer. Add `?debug` to the URL to log what the OCR reads.
+In testing on synthetic cards with harsh lighting, glare, noise and off-centre placement, the picture match picked the right card out of 400 look-alikes 100% of the time. Real cards (holo foil, sleeves, top-loaders) will be harder; add `?debug` to the URL to see match scores in the browser console if something misreads.
+
+The index is built by `npm run index` (runs in CI; incremental, so after the first run it only downloads newly released cards). Pick eras with `SERIES=sv,me,swsh`.
+
+**Optional:** Settings has a paid "AI scan" mode that sends each photo to Claude. It isn't needed; it's there if some unusual cards won't scan.
+
+Tips: even light, fill the frame, avoid glare. A cheap phone stand makes the "slide cards through" flow much nicer.
 
 ## How deck ranking works
 
@@ -41,6 +44,7 @@ npm install
 npm run dev        # http://localhost:5173, also on your LAN
 npm test
 npm run meta       # refresh public/meta.json from Limitless
+npm run index      # build/update the offline card index in public/card-index
 npm run build
 ```
 
@@ -48,9 +52,9 @@ Phones only allow camera access over HTTPS (or localhost), so for real scanning 
 
 ## Deploying
 
-`.github/workflows/deploy.yml` runs daily and on every push to `main`: tests, refreshes the meta, commits `public/meta.json` if it changed, builds, and deploys to GitHub Pages. One-time setup: repo **Settings → Pages → Source: GitHub Actions**. Optional: add a `LIMITLESS_API_KEY` repo secret for higher rate limits.
+`.github/workflows/deploy.yml` runs daily and on every push to `main`: tests, refreshes the meta and the card index, commits them if they changed, builds, and deploys to GitHub Pages. The very first run downloads ~10k card images to build the index, so give it a while. One-time setup: repo **Settings → Pages → Source: GitHub Actions**. Optional: add a `LIMITLESS_API_KEY` repo secret for higher rate limits.
 
-Until the first real meta fetch runs, the Decks tab shows clearly-labelled sample data.
+Until the first CI run finishes, the Decks tab shows clearly-labelled sample data and the scanner falls back to reading text only.
 
 ## Privacy
 

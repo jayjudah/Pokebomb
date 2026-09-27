@@ -2,6 +2,7 @@
 // database that needs no API key and allows browser requests.
 import type { Category, CardInfo } from "./types";
 import { similarity } from "./text";
+import { indexSize, lookupName, lookupNumber, toCardInfo as indexCardInfo } from "./cardIndex";
 
 const API = "https://api.tcgdex.net/v2/en";
 
@@ -116,11 +117,37 @@ export interface Match {
  * printing. The printed denominator narrows the set down to a handful of
  * candidates; the name picks between them.
  */
-export async function resolveCard(read: {
+export interface CardRead {
   name?: string;
   number?: string;
   total?: number;
-}): Promise<Match | null> {
+}
+
+// Same logic as the network path below, against the offline index.
+function resolveLocal({ name, number, total }: CardRead): Match | null {
+  if (number && total) {
+    const hits = lookupNumber(number, total)
+      .map((c) => ({ c, score: name ? similarity(name, c.name) : 0.5 }))
+      .sort((a, b) => b.score - a.score);
+    const best = hits[0];
+    if (best) {
+      const confidence = name ? best.score : hits.length === 1 ? 0.75 : 0.4;
+      if (confidence >= 0.55) return { card: indexCardInfo(best.c), confidence };
+    }
+  }
+  if (name && name.replace(/[^a-z]/gi, "").length >= 4) {
+    const hit = lookupName(name);
+    if (hit && hit.score >= 0.8) return { card: indexCardInfo(hit.card), confidence: Math.min(hit.score, 0.6) };
+  }
+  return null;
+}
+
+export async function resolveCard(read: CardRead): Promise<Match | null> {
+  if (indexSize()) {
+    const local = resolveLocal(read);
+    if (local) return local;
+    // Not in the index (brand-new set?): ask TCGdex directly.
+  }
   const { name, number, total } = read;
 
   if (number && total) {
