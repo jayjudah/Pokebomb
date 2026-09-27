@@ -1,0 +1,20 @@
+{
+ "dims": 444,
+ "series": [
+  {
+   "id": "sv",
+   "name": "Scarlet & Violet",
+   "count": 3698
+  },
+  {
+   "id": "me",
+   "name": "Mega Evolution",
+   "count": 1264
+  },
+  {
+   "id": "swsh",
+   "name": "Sword & Shield",
+   "count": 3675
+  }
+ ]
+}
