@@ -1,10 +1,12 @@
 import { useMemo, useState } from "react";
-import { addCard, setQty, useCollection } from "../lib/collection";
+import { addCard, adjustQty, useCollection } from "../lib/collection";
 import { imageUrl } from "../lib/cardDb";
 import { isLegal } from "../lib/deckAdvisor";
 import { useSettings } from "../lib/settings";
 import type { OwnedCard } from "../lib/types";
 import CardSearch from "./CardSearch";
+import ImportCsv from "./ImportCsv";
+import { SyncChip } from "./Account";
 
 type Filter = "all" | "Pokemon" | "Trainer" | "Energy";
 type Sort = "recent" | "name" | "set" | "value";
@@ -18,6 +20,7 @@ export default function CollectionView() {
   const [sort, setSort] = useState<Sort>("recent");
   const [open, setOpen] = useState<OwnedCard | null>(null);
   const [searching, setSearching] = useState(false);
+  const [importing, setImporting] = useState(false);
 
   const stats = useMemo(() => {
     const total = cards.reduce((s, c) => s + c.qty, 0);
@@ -58,9 +61,13 @@ export default function CollectionView() {
     <div className="page">
       <header className="page-head">
         <h1>Collection</h1>
-        <button className="primary" onClick={() => setSearching(true)}>
-          + Add card
-        </button>
+        <div className="head-actions">
+          <SyncChip />
+          <button onClick={() => setImporting(true)}>Import CSV</button>
+          <button className="primary" onClick={() => setSearching(true)}>
+            + Add
+          </button>
+        </div>
       </header>
 
       <div className="stats">
@@ -138,6 +145,7 @@ export default function CollectionView() {
       )}
 
       {open && <CardDetail card={cards.find((c) => c.id === open.id) ?? open} onClose={() => setOpen(null)} />}
+      {importing && <ImportCsv onClose={() => setImporting(false)} />}
       {searching && (
         <CardSearch
           onClose={() => setSearching(false)}
@@ -169,9 +177,9 @@ function CardDetail({ card, onClose }: { card: OwnedCard; onClose(): void }) {
           {card.price != null && <span className="tag">${card.price.toFixed(2)}</span>}
         </p>
         <div className="stepper">
-          <button onClick={() => setQty(card.id, card.qty - 1)}>−</button>
+          <button onClick={() => adjustQty(card.id, -1)}>−</button>
           <b>{card.qty}</b>
-          <button onClick={() => setQty(card.id, card.qty + 1)}>+</button>
+          <button onClick={() => adjustQty(card.id, 1)}>+</button>
         </div>
         <button onClick={onClose}>Close</button>
       </div>

@@ -36,6 +36,8 @@ interface State {
   norms: Float32Array;
   sets: Map<string, { name: string; official: number; img?: string }>;
   byNumber: Map<string, IndexCard[]>; // "130" -> cards with that collector number
+  byId: Map<string, IndexCard>;
+  byName: Map<string, IndexCard[]>; // normalised name -> printings
 }
 
 const CAT: Record<string, Category> = { P: "Pokemon", T: "Trainer", E: "Energy" };
@@ -63,10 +65,20 @@ export function loadIndex(): Promise<boolean> {
         ]);
         return { meta, vecs: new Int8Array(bin) };
       }),
-    ).then((ps) =>
-      // A half-updated cache (new .json, old .bin) would misalign every row.
-      ps.filter((p) => p.meta.dims === DIMS && p.vecs.length === p.meta.cards.length * DIMS),
     );
+    return setIndexData(parts);
+  })().catch(() => {
+    loading = null;
+    return false;
+  });
+  return loading;
+}
+
+/** Build the in-memory index from series files (also used by tests). */
+export function setIndexData(all: { meta: SeriesMeta; vecs: Int8Array }[]): boolean {
+  {
+    // A half-updated cache (new .json, old .bin) would misalign every row.
+    const parts = all.filter((p) => p.meta.dims === DIMS && p.vecs.length === p.meta.cards.length * DIMS);
     const toCard = (r: Row): IndexCard => ({
       id: r[0],
       name: r[1],
@@ -93,13 +105,15 @@ export function loadIndex(): Promise<boolean> {
       const k = numKey(c.localId);
       byNumber.set(k, [...(byNumber.get(k) ?? []), c]);
     }
-    state = { cards, vecCount: withVec.length, vecs, norms, sets, byNumber };
+    const byId = new Map(cards.map((c) => [c.id, c]));
+    const byName = new Map<string, IndexCard[]>();
+    for (const c of cards) {
+      const k = normalizeName(c.name);
+      byName.set(k, [...(byName.get(k) ?? []), c]);
+    }
+    state = { cards, vecCount: withVec.length, vecs, norms, sets, byNumber, byId, byName };
     return true;
-  })().catch(() => {
-    loading = null;
-    return false;
-  });
-  return loading;
+  }
 }
 
 export function toCardInfo(c: IndexCard): CardInfo {
@@ -198,4 +212,37 @@ export function lookupName(name: string): { card: IndexCard; score: number } | n
     }
   }
   return best ? { card: best, score: bestScore } : null;
+}
+
+export function findById(id: string): IndexCard | undefined {
+  return state?.byId.get(id);
+}
+
+/** Every printing with exactly this name. */
+export function cardsNamed(name: string): IndexCard[] {
+  return state?.byName.get(normalizeName(name)) ?? [];
+}
+
+const setKey = (s: string) =>
+  normalizeName(s)
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+/**
+ * Sets a spreadsheet's "Set" column could mean: an id ("sv06"), a name
+ * ("Twilight Masquerade"), or both ("SV06: Twilight Masquerade").
+ */
+export function setsMatching(text: string): string[] {
+  if (!state || !text.trim()) return [];
+  const t = setKey(text);
+  const tId = text.trim().toLowerCase();
+  const out: string[] = [];
+  for (const [id, s] of state.sets) {
+    const n = setKey(s.name);
+    if (id.toLowerCase() === tId || n === t || (n.length >= 5 && ` ${t} `.includes(` ${n} `))) out.push(id);
+  }
+  // "Obsidian Flames" shouldn't also pick a set merely named "Flames".
+  const longest = Math.max(0, ...out.map((id) => setKey(state!.sets.get(id)!.name).length));
+  return out.filter((id) => id.toLowerCase() === tId || setKey(state!.sets.get(id)!.name).length === longest);
 }

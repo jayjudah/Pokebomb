@@ -265,3 +265,13 @@ h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: 
 @media (max-width: 420px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Accounts, sync and import */
+.sync-chip { font-size: 12px; color: var(--muted); background: var(--panel); border-radius: 999px; padding: 4px 10px; white-space: nowrap; }
+.sync-error { color: var(--bad); }
+.sync-offline { color: var(--warn); }
+.signin { display: flex; flex-direction: column; gap: 10px; }
+.filepick { display: block; text-align: center; padding: 28px 12px; border: 2px dashed var(--panel-2); border-radius: var(--radius); cursor: pointer; font-weight: 600; }
+.filepick input { display: none; }
+.head-actions { display: flex; gap: 8px; align-items: center; }
+button:disabled { opacity: 0.5; }

@@ -1,24 +1,74 @@
-// The collection lives in IndexedDB on the device. Export/import moves it
-// between phones (or backs it up).
+// The collection store. Every change is an operation (see ops.ts): signed
+// out it applies to the on-device copy; signed in it's also queued and
+// synced to the account (see cloud.ts). Saved in IndexedDB either way.
 import { get, set } from "idb-keyval";
 import { useSyncExternalStore } from "react";
 import { getCard } from "./cardDb";
+import { CollectionState } from "./collectionState";
+import { newOpId, type Op, type Row } from "./ops";
+import type { SyncStore } from "./sync";
 import type { CardInfo, OwnedCard } from "./types";
 
-const KEY = "collection-v1";
+const KEY = "collection-v2";
+const LEGACY_KEY = "collection-v1";
+
+let state = new CollectionState();
 let cards: OwnedCard[] = [];
 const listeners = new Set<() => void>();
+let changeHook: (() => void) | null = null;
 
-function emit() {
-  cards = [...cards];
+function refresh() {
+  cards = state.view();
   listeners.forEach((l) => l());
-  void set(KEY, cards);
+  void set(KEY, state.save());
 }
 
-export const ready: Promise<void> = get<OwnedCard[]>(KEY).then((saved) => {
-  cards = saved ?? [];
+function commit(op: Op) {
+  state.apply(op);
+  refresh();
+  changeHook?.();
+}
+
+export const ready: Promise<void> = (async () => {
+  const saved = (await get(KEY)) ?? (await get(LEGACY_KEY));
+  state = CollectionState.from(saved);
+  cards = state.view();
   listeners.forEach((l) => l());
-});
+})();
+
+/** Called on every local change (cloud.ts uses it to schedule a sync). */
+export function setChangeHook(fn: () => void) {
+  changeHook = fn;
+}
+
+export const collectionSyncStore: SyncStore = {
+  pending: () => state.pending(),
+  confirmed: (ops) => {
+    state.confirmed(ops);
+    refresh();
+  },
+  snapshot: (rows: Row[]) => {
+    state.snapshot(rows);
+    refresh();
+  },
+};
+
+export async function onSignedIn(userId: string): Promise<number> {
+  await ready;
+  const merged = state.signIn(userId);
+  refresh();
+  return merged;
+}
+
+export async function onSignedOut() {
+  await ready;
+  state.signOut();
+  refresh();
+}
+
+export function unsyncedChanges(): number {
+  return state.pending().length;
+}
 
 export function useCollection(): OwnedCard[] {
   return useSyncExternalStore(
@@ -35,16 +85,14 @@ export function getCollection(): OwnedCard[] {
 }
 
 export function addCard(card: CardInfo, qty = 1): OwnedCard {
-  const existing = cards.find((c) => c.id === card.id);
-  if (existing) {
-    // Offline index reads lack price/legality; don't let blanks wipe known values.
-    const known = Object.fromEntries(Object.entries(card).filter(([, v]) => v !== undefined));
-    cards = cards.map((c) => (c.id === card.id ? { ...c, ...known, qty: c.qty + qty } : c));
-  } else {
-    cards = [{ ...card, qty, addedAt: Date.now() }, ...cards];
-  }
-  emit();
+  commit({ kind: "add", op: newOpId(), id: card.id, delta: qty, info: card });
   return cards.find((c) => c.id === card.id)!;
+}
+
+/** Add or remove copies of a card already in the collection. */
+export function adjustQty(id: string, delta: number) {
+  const info = cards.find((c) => c.id === id);
+  commit({ kind: "add", op: newOpId(), id, delta, info });
 }
 
 /**
@@ -55,21 +103,19 @@ export async function enrichCard(id: string) {
   try {
     const full = await getCard(id);
     if (!cards.some((c) => c.id === id)) return;
-    cards = cards.map((c) => (c.id === id ? { ...c, ...full, qty: c.qty, addedAt: c.addedAt } : c));
-    emit();
+    commit({ kind: "add", op: newOpId(), id, delta: 0, info: full });
   } catch {
     /* offline */
   }
 }
 
-export function setQty(id: string, qty: number) {
-  cards = qty <= 0 ? cards.filter((c) => c.id !== id) : cards.map((c) => (c.id === id ? { ...c, qty } : c));
-  emit();
-}
-
+/** Make the collection exactly `next` (restore a backup, or clear with []). */
 export function replaceCollection(next: OwnedCard[]) {
-  cards = next;
-  emit();
+  const keep = new Set(next.map((c) => c.id));
+  for (const c of cards) if (!keep.has(c.id)) state.apply({ kind: "set", op: newOpId(), id: c.id, qty: 0 });
+  for (const c of next) state.apply({ kind: "set", op: newOpId(), id: c.id, qty: c.qty, info: c });
+  refresh();
+  changeHook?.();
 }
 
 export function exportJson(): string {
