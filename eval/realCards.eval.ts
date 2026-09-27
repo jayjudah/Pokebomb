@@ -21,6 +21,10 @@ const { decideFromImage, decideWithOcr } = await import("../src/lib/matchDecisio
 const { normalizeName } = await import("../src/lib/text");
 
 const SAMPLE = Number(process.env.EVAL_SAMPLE ?? 300);
+const SWEEP: [accept: number, margin: number][] = [[0.7, 0.1], [0.75, 0.1], [0.8, 0.1], [0.8, 0.06], [0.85, 0.06]];
+type Hits = ReturnType<typeof searchImage>;
+const inRuns: { id: string; name: string; hits: Hits }[] = [];
+const outRuns: { name: string; hits: Hits }[] = [];
 const OUTSIDE = Number(process.env.EVAL_OUTSIDE ?? 100);
 
 async function photo(imageUrl: string, seed: number) {
@@ -64,6 +68,7 @@ it("identifies real cards from simulated phone photos", async () => {
     const p = await photo(c.img, c.id.length * 97 + c.name.length);
     if (!p) return void tally.fetchFail++;
     const { hits, d } = identify(p);
+    inRuns.push({ id: c.id, name: c.name, hits });
     const selfHit = hits.find((h) => h.card.id === c.id);
     if (selfHit) topScores.push(selfHit.score);
     if (!d) return void tally.nothing++;
@@ -97,13 +102,33 @@ it("identifies real cards from simulated phone photos", async () => {
     const p = await photo(c.img, c.name.length * 31);
     if (!p) return;
     outN++;
-    const { d } = identify(p);
+    const { d, hits } = identify(p);
+    outRuns.push({ name: c.name, hits });
     if (d && d.confidence >= 0.7) {
       if (normalizeName(d.card.name) === normalizeName(c.name)) falseAddSameName++;
       else falseAdd++;
     }
   });
   console.log(`NOT IN INDEX (n=${outN}): auto-added a wrong card ${falseAdd}, auto-added same-name reprint ${falseAddSameName}`);
+
+  // Same photos, different thresholds: (in-index) auto/right, auto/wrong; (outside) wrong auto-adds.
+  for (const [accept, margin] of SWEEP) {
+    const decide = (hits: Hits) => decideFromImage(hits, accept, margin) ?? decideWithOcr(hits, {}, setOfficialCount, accept);
+    let right = 0, wrongIn = 0, asked = 0, wrongOut = 0;
+    for (const r of inRuns) {
+      const d = decide(r.hits);
+      if (!d || d.confidence < 0.7) asked++;
+      else if (normalizeName(d.card.name) === normalizeName(r.name)) right++;
+      else wrongIn++;
+    }
+    for (const r of outRuns) {
+      const d = decide(r.hits);
+      if (d && d.confidence >= 0.7 && normalizeName(d.card.name) !== normalizeName(r.name)) wrongOut++;
+    }
+    console.log(`SWEEP accept=${accept} margin=${margin}: in-index right ${right}/${inRuns.length}, wrong ${wrongIn}, asked/OCR ${asked}; outside wrong adds ${wrongOut}/${outRuns.length}`);
+  }
+  const outTop = outRuns.map((r) => r.hits[0]?.score ?? 0).sort((a, b) => a - b);
+  console.log(`outside top score p50=${outTop[Math.floor(outTop.length / 2)]?.toFixed(3)} p90=${outTop[Math.floor(outTop.length * 0.9)]?.toFixed(3)} max=${outTop.at(-1)?.toFixed(3)}`);
 
   expect(tally.autoWrong / n).toBeLessThan(0.05);
 });

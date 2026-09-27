@@ -26,11 +26,11 @@ const sameNumber = (a: string, b: string) =>
   /^\d+$/.test(a) && /^\d+$/.test(b) ? Number(a) === Number(b) : a.toUpperCase() === b.toUpperCase();
 
 /** Clear winner on the picture alone? Then we don't need to wait for OCR. */
-export function decideFromImage(hits: ImageHit[]): Decision | null {
+export function decideFromImage(hits: ImageHit[], accept = IMAGE_ACCEPT, minMargin = IMAGE_MARGIN): Decision | null {
   const [a, b] = hits;
-  if (!a || a.score < IMAGE_ACCEPT) return null;
+  if (!a || a.score < accept) return null;
   const margin = a.score - (b?.score ?? -1);
-  if (margin >= IMAGE_MARGIN) return { card: a.card, confidence: 0.95, why: `image ${a.score.toFixed(2)} (+${margin.toFixed(2)})` };
+  if (margin >= minMargin) return { card: a.card, confidence: 0.95, why: `image ${a.score.toFixed(2)} (+${margin.toFixed(2)})` };
   return null;
 }
 
@@ -42,6 +42,7 @@ export function decideWithOcr(
   hits: ImageHit[],
   ocr: OcrRead,
   setTotal: (setId: string) => number | undefined,
+  accept = IMAGE_ACCEPT,
 ): Decision | null {
   const [a] = hits;
   if (!a || a.score < IMAGE_PLAUSIBLE) return null;
@@ -64,7 +65,7 @@ export function decideWithOcr(
   // Every look-alike is the same card name (e.g. an Ultra Ball reprint).
   // For decks the name is what matters, so take it even if the printing is a guess.
   const oneName = close.every((h) => normalizeName(h.card.name) === normalizeName(a.card.name));
-  if (oneName && a.score >= IMAGE_ACCEPT - 0.1) return { card: a.card, confidence: 0.8, why: "image, printing guessed" };
+  if (oneName && a.score >= accept - 0.1) return { card: a.card, confidence: 0.8, why: "image, printing guessed" };
 
   return { card: a.card, confidence: 0.5, why: "image unsure" };
 }
