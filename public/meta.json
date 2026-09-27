@@ -1,0 +1,693 @@
+{
+ "source": "SAMPLE DATA: run `npm run meta` (or let the daily GitHub Action run) for the real meta",
+ "generatedAt": "2026-09-27T00:00:00.000Z",
+ "format": "Standard",
+ "isSample": true,
+ "sample": {
+  "tournaments": 0,
+  "players": 0,
+  "from": "",
+  "to": ""
+ },
+ "decks": [
+  {
+   "id": "dragapult-ex",
+   "name": "Dragapult ex",
+   "players": 280,
+   "share": 0.14,
+   "winRate": 0.54,
+   "topCutRate": 0.19,
+   "score": 92,
+   "list": [
+    {
+     "count": 4,
+     "name": "Dreepy",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Drakloak",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dragapult ex",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Budew",
+     "category": "Pokemon",
+     "inclusion": 0.7
+    },
+    {
+     "count": 4,
+     "name": "Arven",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "inclusion": 0.7
+    },
+    {
+     "count": 4,
+     "name": "Iono",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Nest Ball",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Super Rod",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 1,
+     "name": "Prime Catcher",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 4,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "inclusion": 0.85
+    },
+    {
+     "count": 2,
+     "name": "Switch",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Counter Catcher",
+     "category": "Trainer",
+     "inclusion": 0.55
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Lost Vacuum",
+     "category": "Trainer",
+     "inclusion": 0.4
+    },
+    {
+     "count": 2,
+     "name": "Artazon",
+     "category": "Trainer",
+     "inclusion": 0.45
+    },
+    {
+     "count": 1,
+     "name": "Hisuian Heavy Ball",
+     "category": "Trainer",
+     "inclusion": 0.3
+    },
+    {
+     "count": 3,
+     "name": "Basic {P} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Basic {R} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "gardevoir-ex",
+   "name": "Gardevoir ex",
+   "players": 200,
+   "share": 0.1,
+   "winRate": 0.53,
+   "topCutRate": 0.16,
+   "score": 84,
+   "list": [
+    {
+     "count": 3,
+     "name": "Ralts",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Kirlia",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Gardevoir ex",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "inclusion": 0.8
+    },
+    {
+     "count": 1,
+     "name": "Mew ex",
+     "category": "Pokemon",
+     "inclusion": 0.6
+    },
+    {
+     "count": 4,
+     "name": "Earthen Vessel",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "inclusion": 0.7
+    },
+    {
+     "count": 4,
+     "name": "Iono",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Nest Ball",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Super Rod",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 1,
+     "name": "Prime Catcher",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 4,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "inclusion": 0.85
+    },
+    {
+     "count": 2,
+     "name": "Switch",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Counter Catcher",
+     "category": "Trainer",
+     "inclusion": 0.55
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Lost Vacuum",
+     "category": "Trainer",
+     "inclusion": 0.4
+    },
+    {
+     "count": 2,
+     "name": "Artazon",
+     "category": "Trainer",
+     "inclusion": 0.45
+    },
+    {
+     "count": 10,
+     "name": "Basic {P} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Basic {D} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "raging-bolt-ex",
+   "name": "Raging Bolt ex",
+   "players": 160,
+   "share": 0.08,
+   "winRate": 0.52,
+   "topCutRate": 0.14,
+   "score": 76,
+   "list": [
+    {
+     "count": 4,
+     "name": "Raging Bolt ex",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Teal Mask Ogerpon ex",
+     "category": "Pokemon",
+     "inclusion": 0.95
+    },
+    {
+     "count": 1,
+     "name": "Squawkabilly ex",
+     "category": "Pokemon",
+     "inclusion": 0.5
+    },
+    {
+     "count": 4,
+     "name": "Professor Sada's Vitality",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Earthen Vessel",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Energy Retrieval",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 4,
+     "name": "Iono",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Nest Ball",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Super Rod",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 1,
+     "name": "Prime Catcher",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Switch",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Counter Catcher",
+     "category": "Trainer",
+     "inclusion": 0.55
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Lost Vacuum",
+     "category": "Trainer",
+     "inclusion": 0.4
+    },
+    {
+     "count": 2,
+     "name": "Artazon",
+     "category": "Trainer",
+     "inclusion": 0.45
+    },
+    {
+     "count": 6,
+     "name": "Basic {G} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Basic {L} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Basic {F} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "charizard-ex",
+   "name": "Charizard ex",
+   "players": 180,
+   "share": 0.09,
+   "winRate": 0.51,
+   "topCutRate": 0.13,
+   "score": 71,
+   "list": [
+    {
+     "count": 3,
+     "name": "Charmander",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Charmeleon",
+     "category": "Pokemon",
+     "inclusion": 0.8
+    },
+    {
+     "count": 3,
+     "name": "Charizard ex",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Pidgey",
+     "category": "Pokemon",
+     "inclusion": 0.8
+    },
+    {
+     "count": 2,
+     "name": "Pidgeot ex",
+     "category": "Pokemon",
+     "inclusion": 0.95
+    },
+    {
+     "count": 4,
+     "name": "Arven",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "inclusion": 0.8
+    },
+    {
+     "count": 4,
+     "name": "Iono",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Nest Ball",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Super Rod",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 1,
+     "name": "Prime Catcher",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 4,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "inclusion": 0.85
+    },
+    {
+     "count": 2,
+     "name": "Switch",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Counter Catcher",
+     "category": "Trainer",
+     "inclusion": 0.55
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Lost Vacuum",
+     "category": "Trainer",
+     "inclusion": 0.4
+    },
+    {
+     "count": 2,
+     "name": "Artazon",
+     "category": "Trainer",
+     "inclusion": 0.45
+    },
+    {
+     "count": 2,
+     "name": "Hisuian Heavy Ball",
+     "category": "Trainer",
+     "inclusion": 0.3
+    },
+    {
+     "count": 1,
+     "name": "Energy Search",
+     "category": "Trainer",
+     "inclusion": 0.3
+    },
+    {
+     "count": 6,
+     "name": "Basic {R} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "pikachu-ex",
+   "name": "Pikachu ex",
+   "players": 60,
+   "share": 0.03,
+   "winRate": 0.5,
+   "topCutRate": 0.08,
+   "score": 48,
+   "list": [
+    {
+     "count": 4,
+     "name": "Pikachu ex",
+     "category": "Pokemon",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Pikachu",
+     "category": "Pokemon",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Magneton",
+     "category": "Pokemon",
+     "inclusion": 0.6
+    },
+    {
+     "count": 4,
+     "name": "Professor's Research",
+     "category": "Trainer",
+     "inclusion": 0.8
+    },
+    {
+     "count": 4,
+     "name": "Electric Generator",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Levincia",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 4,
+     "name": "Iono",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Nest Ball",
+     "category": "Trainer",
+     "inclusion": 0.9
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Super Rod",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 1,
+     "name": "Prime Catcher",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Switch",
+     "category": "Trainer",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Counter Catcher",
+     "category": "Trainer",
+     "inclusion": 0.55
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "inclusion": 0.5
+    },
+    {
+     "count": 2,
+     "name": "Lost Vacuum",
+     "category": "Trainer",
+     "inclusion": 0.4
+    },
+    {
+     "count": 2,
+     "name": "Artazon",
+     "category": "Trainer",
+     "inclusion": 0.45
+    },
+    {
+     "count": 2,
+     "name": "Hisuian Heavy Ball",
+     "category": "Trainer",
+     "inclusion": 0.3
+    },
+    {
+     "count": 12,
+     "name": "Basic {L} Energy",
+     "category": "Energy",
+     "inclusion": 1
+    }
+   ]
+  }
+ ]
+}
