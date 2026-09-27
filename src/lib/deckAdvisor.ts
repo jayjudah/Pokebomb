@@ -57,13 +57,15 @@ export function countByName(collection: OwnedCard[], opts: AdvisorOptions): Map<
   return counts;
 }
 
-// The deck name usually starts with its main attacker ("Dragapult ex",
-// "Gardevoir ex / Jellicent ex"). Without it you don't have the deck.
-function starNames(deck: MetaDeck): string[] {
-  return deck.name
-    .split(/[/|]/)
-    .map((s) => normalizeName(s))
-    .filter(Boolean);
+// Limitless names archetypes after their main Pokémon without suffixes
+// ("Dragapult", "N's Zoroark", "Ogerpon Meganium Arboliva"), while the cards
+// are "Dragapult ex", "Mega Lopunny ex". Match on the Pokémon's last word.
+const SUFFIX = /\s+(ex|v|vstar|vmax|v-union|gx|break)$/;
+
+function starKey(cardName: string, deckWords: Set<string>): string | null {
+  const base = normalizeName(cardName).replace(SUFFIX, "");
+  const last = base.split(" ").at(-1) ?? "";
+  return deckWords.has(last) ? last : null;
 }
 
 export function planDeck(deck: MetaDeck, owned: Map<string, number>, opts: AdvisorOptions): DeckPlan {
@@ -98,10 +100,14 @@ export function planDeck(deck: MetaDeck, owned: Map<string, number>, opts: Advis
   const wHave = lines.reduce((s, l) => s + l.have * weight(l), 0);
   const weightedCompletion = wHave / wNeed;
 
-  const stars = starNames(deck);
-  const missingStar = lines.some(
-    (l) => l.category === "Pokemon" && stars.includes(normalizeName(l.name)) && l.have === 0,
-  );
+  // Missing the star = owning no copy of any card for one of the named Pokémon.
+  const deckWords = new Set(normalizeName(deck.name).split(/[\s/|]+/));
+  const starHave = new Map<string, number>();
+  for (const l of lines) {
+    const key = l.category === "Pokemon" ? starKey(l.name, deckWords) : null;
+    if (key) starHave.set(key, (starHave.get(key) ?? 0) + l.have);
+  }
+  const missingStar = [...starHave.values()].some((have) => have === 0);
 
   // Half a deck doesn't play half as well, so completion is squared. Missing
   // the namesake Pokémon is close to not having the deck at all.

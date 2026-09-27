@@ -1,0 +1,21 @@
+name: Scanner accuracy (real cards)
+
+# Measures scan accuracy on real TCGdex card images. Run by hand, or on
+# pushes that touch the matching code.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+    paths: ["src/lib/fingerprint.ts", "src/lib/cardIndex.ts", "src/lib/matchDecision.ts", "eval/**"]
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run eval
