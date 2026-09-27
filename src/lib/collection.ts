@@ -37,7 +37,9 @@ export function getCollection(): OwnedCard[] {
 export function addCard(card: CardInfo, qty = 1): OwnedCard {
   const existing = cards.find((c) => c.id === card.id);
   if (existing) {
-    cards = cards.map((c) => (c.id === card.id ? { ...c, ...card, qty: c.qty + qty } : c));
+    // Offline index reads lack price/legality; don't let blanks wipe known values.
+    const known = Object.fromEntries(Object.entries(card).filter(([, v]) => v !== undefined));
+    cards = cards.map((c) => (c.id === card.id ? { ...c, ...known, qty: c.qty + qty } : c));
   } else {
     cards = [{ ...card, qty, addedAt: Date.now() }, ...cards];
   }
