@@ -1,5 +1,7 @@
 # Accounts and sync setup (Supabase, free tier)
 
+> **Status:** project `pokebomb` (`zrcyjfoygrxlqyfycots`, us-east-1) is created, the migration is applied, Supabase's security advisor reports no issues, and the app is pointed at it (`src/cloudConfig.ts`). The only step left is **3. Turn on 6-digit email codes** below. The rest of this page is for rebuilding from scratch.
+
 About 5 minutes, once. After this, signing in on any device shows the same collection.
 
 ## 1. Create the project
