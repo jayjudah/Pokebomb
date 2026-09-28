@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { exportCsv, exportJson, parseImport, replaceCollection, useCollection } from "../lib/collection";
 import { updateSettings, useSettings } from "../lib/settings";
 import { indexSize, loadIndex } from "../lib/cardIndex";
+import Account from "./Account";
+import ImportCsv from "./ImportCsv";
 
 function download(name: string, text: string, type: string) {
   const url = URL.createObjectURL(new Blob([text], { type }));
@@ -17,6 +19,7 @@ export default function SettingsView() {
   const cards = useCollection();
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState("");
+  const [importing, setImporting] = useState(false);
   const [indexed, setIndexed] = useState(indexSize());
   useEffect(() => {
     void loadIndex().then(() => setIndexed(indexSize()));
@@ -28,6 +31,11 @@ export default function SettingsView() {
       <header className="page-head">
         <h1>Settings</h1>
       </header>
+
+      <section>
+        <h2>Account &amp; sync</h2>
+        <Account />
+      </section>
 
       <section>
         <h2>Scanning</h2>
@@ -102,7 +110,8 @@ export default function SettingsView() {
         <div className="row wrap">
           <button onClick={() => download(`pokebomb-${date}.json`, exportJson(), "application/json")}>Export backup</button>
           <button onClick={() => download(`pokebomb-${date}.csv`, exportCsv(), "text/csv")}>Export CSV</button>
-          <button onClick={() => fileRef.current?.click()}>Import backup</button>
+          <button onClick={() => setImporting(true)}>Import CSV</button>
+          <button onClick={() => fileRef.current?.click()}>Restore backup</button>
           <input
             ref={fileRef}
             type="file"
@@ -141,6 +150,7 @@ export default function SettingsView() {
         Card data and images: TCGdex. Meta: Limitless TCG. Not affiliated with Nintendo, The Pokémon Company or Game
         Freak.
       </p>
+      {importing && <ImportCsv onClose={() => setImporting(false)} />}
     </div>
   );
 }

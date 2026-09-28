@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { CardScanner, computeGuide, type Rect, type ScanStatus } from "../lib/scanner";
-import { addCard, enrichCard, setQty, getCollection } from "../lib/collection";
+import { addCard, adjustQty, enrichCard, getCollection } from "../lib/collection";
 import { indexSize, loadIndex } from "../lib/cardIndex";
 import { imageUrl, type Match } from "../lib/cardDb";
 import { getSettings, useSettings } from "../lib/settings";
@@ -87,7 +87,7 @@ export default function ScanView() {
 
   function undo(r: Recent) {
     const owned = getCollection().find((c) => c.id === r.card.id);
-    if (owned) setQty(owned.id, owned.qty - 1);
+    if (owned) adjustQty(owned.id, -1);
     setRecent((list) => list.filter((x) => x.key !== r.key));
   }
 

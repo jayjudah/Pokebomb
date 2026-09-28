@@ -56,9 +56,20 @@ Phones only allow camera access over HTTPS (or localhost), so for real scanning 
 
 Until the first CI run finishes, the Decks tab shows clearly-labelled sample data and the scanner falls back to reading text only.
 
-## Privacy
+## Import from a spreadsheet
 
-Everything stays on the device: the collection is in IndexedDB, settings (including the optional API key) in localStorage. Use Settings → Export backup to move a collection to another device.
+**Collection → Import CSV** takes this app's export, TCGplayer and Collectr exports, or any spreadsheet with a header row. Columns are recognised by name (quantity, name, set, card number, id). Each row is matched against the offline card database, and you see a preview first: how many cards matched, which printings were guessed from a name alone, and which rows weren't found.
+
+## Accounts, sync and privacy
+
+Sign in with your email and a 6-digit code (**Settings → Account & sync**) and the collection syncs across your phone, tablet and computer, live.
+
+- **Private:** the database itself (Postgres row level security) only returns or changes rows belonging to the signed-in account. `supabase/rls.test.ts` runs the real migration and proves another account can't read, change, insert or delete your cards.
+- **Works offline:** changes save on the device instantly and sync when there's a connection.
+- **No lost scans:** adding cards sends "+1" rather than a total, so two devices scanning at once both count. Every change carries an id the server remembers, so a retry after a dropped connection can't double-count.
+- Signing out removes the collection from that device; it stays in the account.
+
+Setup takes about 5 minutes: see [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md). Without it, the app works exactly the same but keeps the collection on each device only.
 
 ---
 
