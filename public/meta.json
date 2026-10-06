@@ -1,12 +1,12 @@
 {
  "source": "Limitless TCG online tournaments (play.limitlesstcg.com)",
- "generatedAt": "2026-10-05T18:32:21.436Z",
+ "generatedAt": "2026-10-06T15:59:40.610Z",
  "format": "Standard",
  "sample": {
   "tournaments": 40,
-  "players": 4187,
-  "from": "2026-09-29",
-  "to": "2026-10-05"
+  "players": 4229,
+  "from": "2026-09-30",
+  "to": "2026-10-06"
  },
  "decks": [
   {
@@ -15,11 +15,11 @@
    "icons": [
     "dragapult"
    ],
-   "players": 435,
-   "share": 0.1097,
-   "winRate": 0.4824,
-   "topCutRate": 0.0851,
-   "score": 65.4,
+   "players": 464,
+   "share": 0.1159,
+   "winRate": 0.491,
+   "topCutRate": 0.0905,
+   "score": 75.6,
    "list": [
     {
      "count": 4,
@@ -51,23 +51,15 @@
      "category": "Pokemon",
      "set": "TWM",
      "number": "95",
-     "inclusion": 0.98
-    },
-    {
-     "count": 2,
-     "name": "Budew",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "16",
-     "inclusion": 0.99
+     "inclusion": 0.97
     },
     {
      "count": 1,
-     "name": "Meowth ex",
+     "name": "Moltres",
      "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.99
+     "set": "PFL",
+     "number": "14",
+     "inclusion": 0.45
     },
     {
      "count": 1,
@@ -79,11 +71,27 @@
     },
     {
      "count": 1,
-     "name": "Moltres",
+     "name": "Meowth ex",
      "category": "Pokemon",
-     "set": "PFL",
-     "number": "14",
-     "inclusion": 0.46
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.98
+    },
+    {
+     "count": 1,
+     "name": "Budew",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "16",
+     "inclusion": 0.98
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.13
     },
     {
      "count": 4,
@@ -111,6 +119,14 @@
     },
     {
      "count": 1,
+     "name": "Judge",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "76",
+     "inclusion": 0.7
+    },
+    {
+     "count": 1,
      "name": "Rosa's Encouragement",
      "category": "Trainer",
      "set": "POR",
@@ -119,19 +135,19 @@
     },
     {
      "count": 1,
-     "name": "Judge",
+     "name": "Dawn",
      "category": "Trainer",
-     "set": "POR",
-     "number": "76",
-     "inclusion": 0.7
+     "set": "PFL",
+     "number": "87",
+     "inclusion": 0.06
     },
     {
      "count": 4,
-     "name": "Ultra Ball",
+     "name": "Crushing Hammer",
      "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.99
+     "set": "POR",
+     "number": "71",
+     "inclusion": 0.92
     },
     {
      "count": 4,
@@ -143,14 +159,6 @@
     },
     {
      "count": 4,
-     "name": "Crushing Hammer",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "71",
-     "inclusion": 0.89
-    },
-    {
-     "count": 4,
      "name": "Poké Pad",
      "category": "Trainer",
      "set": "POR",
@@ -158,20 +166,20 @@
      "inclusion": 1
     },
     {
-     "count": 3,
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.98
+    },
+    {
+     "count": 2,
      "name": "Night Stretcher",
      "category": "Trainer",
      "set": "ASC",
      "number": "196",
      "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.56
     },
     {
      "count": 1,
@@ -182,20 +190,20 @@
      "inclusion": 0.94
     },
     {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.53
+    },
+    {
      "count": 2,
      "name": "Risky Ruins",
      "category": "Trainer",
      "set": "MEG",
      "number": "127",
-     "inclusion": 0.9
-    },
-    {
-     "count": 3,
-     "name": "Fire Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "10",
-     "inclusion": 1
+     "inclusion": 0.89
     },
     {
      "count": 3,
@@ -206,12 +214,482 @@
      "inclusion": 0.99
     },
     {
+     "count": 3,
+     "name": "Fire Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "10",
+     "inclusion": 1
+    },
+    {
      "count": 2,
      "name": "Darkness Energy",
      "category": "Energy",
      "set": "MEE",
      "number": "15",
+     "inclusion": 0.97
+    }
+   ]
+  },
+  {
+   "id": "basic-box-m",
+   "name": "Basic Box",
+   "icons": [
+    "ogerpon",
+    "clefairy"
+   ],
+   "players": 228,
+   "share": 0.057,
+   "winRate": 0.5192,
+   "topCutRate": 0.1096,
+   "score": 69.7,
+   "list": [
+    {
+     "count": 4,
+     "name": "Mega Kangaskhan ex",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "104",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
      "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Teal Mask Ogerpon ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "25",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Latias ex",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "76",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Lillie's Clefairy ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "56",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Raging Bolt ex",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "123",
+     "inclusion": 0.82
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Iron Crown ex",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "81",
+     "inclusion": 0.65
+    },
+    {
+     "count": 1,
+     "name": "Wellspring Mask Ogerpon ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "64",
+     "inclusion": 0.98
+    },
+    {
+     "count": 1,
+     "name": "Chien-Pao",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "56",
+     "inclusion": 0.96
+    },
+    {
+     "count": 1,
+     "name": "Enamorus",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "93",
+     "inclusion": 0.51
+    },
+    {
+     "count": 4,
+     "name": "Crispin",
+     "category": "Trainer",
+     "set": "SCR",
+     "number": "133",
+     "inclusion": 0.91
+    },
+    {
+     "count": 2,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Cyrano",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "170",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "Ciphermaniac's Codebreaking",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "145",
+     "inclusion": 0.91
+    },
+    {
+     "count": 4,
+     "name": "Energy Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "115",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Glass Trumpet",
+     "category": "Trainer",
+     "set": "SCR",
+     "number": "135",
+     "inclusion": 0.79
+    },
+    {
+     "count": 1,
+     "name": "Prime Catcher",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "157",
+     "inclusion": 0.26
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.83
+    },
+    {
+     "count": 1,
+     "name": "Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "130",
+     "inclusion": 0.07
+    },
+    {
+     "count": 4,
+     "name": "Area Zero Underdepths",
+     "category": "Trainer",
+     "set": "SCR",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 6,
+     "name": "Grass Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "9",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Lightning Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "12",
+     "inclusion": 0.82
+    },
+    {
+     "count": 2,
+     "name": "Fighting Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "14",
+     "inclusion": 0.88
+    },
+    {
+     "count": 2,
+     "name": "Psychic Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "13",
+     "inclusion": 0.93
+    },
+    {
+     "count": 1,
+     "name": "Water Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "11",
+     "inclusion": 0.89
+    }
+   ]
+  },
+  {
+   "id": "ogerpon-meganium-hydrapple",
+   "name": "Ogerpon Meganium Hydrapple",
+   "icons": [
+    "ogerpon",
+    "hydrapple"
+   ],
+   "players": 144,
+   "share": 0.036,
+   "winRate": 0.5041,
+   "topCutRate": 0.1181,
+   "score": 60.5,
+   "list": [
+    {
+     "count": 4,
+     "name": "Teal Mask Ogerpon ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "25",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Applin",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "17",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Dipplin",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "18",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Hydrapple ex",
+     "category": "Pokemon",
+     "set": "SCR",
+     "number": "14",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Chikorita",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "8",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Bayleef",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "9",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Meganium",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "10",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Hoothoot",
+     "category": "Pokemon",
+     "set": "SCR",
+     "number": "114",
+     "inclusion": 0.16
+    },
+    {
+     "count": 1,
+     "name": "Noctowl",
+     "category": "Pokemon",
+     "set": "SCR",
+     "number": "115",
+     "inclusion": 0.16
+    },
+    {
+     "count": 1,
+     "name": "Tapu Bulu",
+     "category": "Pokemon",
+     "set": "SFA",
+     "number": "6",
+     "inclusion": 0.82
+    },
+    {
+     "count": 1,
+     "name": "Celebi",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "12",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.96
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Judge",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "76",
+     "inclusion": 0.81
+    },
+    {
+     "count": 1,
+     "name": "Dawn",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "87",
+     "inclusion": 0.6
+    },
+    {
+     "count": 1,
+     "name": "Briar",
+     "category": "Trainer",
+     "set": "SCR",
+     "number": "132",
+     "inclusion": 0.74
+    },
+    {
+     "count": 1,
+     "name": "Lana's Aid",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "155",
+     "inclusion": 0.98
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Bug Catching Set",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "143",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.73
+    },
+    {
+     "count": 1,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.93
+    },
+    {
+     "count": 1,
+     "name": "Unfair Stamp",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "165",
+     "inclusion": 0.89
+    },
+    {
+     "count": 3,
+     "name": "Forest of Vitality",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "117",
+     "inclusion": 1
+    },
+    {
+     "count": 13,
+     "name": "Grass Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "9",
+     "inclusion": 1
     }
    ]
   },
@@ -222,11 +700,11 @@
     "okidogi",
     "barbaracle"
    ],
-   "players": 12,
-   "share": 0.003,
-   "winRate": 0.6351,
-   "topCutRate": 0.4167,
-   "score": 62.6,
+   "players": 13,
+   "share": 0.0032,
+   "winRate": 0.5479,
+   "topCutRate": 0.3077,
+   "score": 59.1,
    "list": [
     {
      "count": 3,
@@ -282,7 +760,7 @@
      "category": "Pokemon",
      "set": "CRI",
      "number": "70",
-     "inclusion": 1
+     "inclusion": 0.77
     },
     {
      "count": 1,
@@ -290,7 +768,7 @@
      "category": "Pokemon",
      "set": "PRE",
      "number": "54",
-     "inclusion": 1
+     "inclusion": 0.92
     },
     {
      "count": 1,
@@ -306,7 +784,7 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "39",
-     "inclusion": 0.33
+     "inclusion": 0.31
     },
     {
      "count": 4,
@@ -330,7 +808,7 @@
      "category": "Trainer",
      "set": "PBL",
      "number": "78",
-     "inclusion": 1
+     "inclusion": 0.85
     },
     {
      "count": 2,
@@ -346,7 +824,7 @@
      "category": "Trainer",
      "set": "TWM",
      "number": "151",
-     "inclusion": 0.67
+     "inclusion": 0.62
     },
     {
      "count": 4,
@@ -370,7 +848,7 @@
      "category": "Trainer",
      "set": "SVI",
      "number": "186",
-     "inclusion": 1
+     "inclusion": 0.92
     },
     {
      "count": 2,
@@ -386,7 +864,7 @@
      "category": "Trainer",
      "set": "SVI",
      "number": "171",
-     "inclusion": 0.67
+     "inclusion": 0.85
     },
     {
      "count": 2,
@@ -431,1353 +909,17 @@
    ]
   },
   {
-   "id": "basic-box-m",
-   "name": "Basic Box",
-   "icons": [
-    "ogerpon",
-    "clefairy"
-   ],
-   "players": 235,
-   "share": 0.0593,
-   "winRate": 0.4967,
-   "topCutRate": 0.0851,
-   "score": 57.3,
-   "list": [
-    {
-     "count": 4,
-     "name": "Mega Kangaskhan ex",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "104",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Teal Mask Ogerpon ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "25",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Latias ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "76",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Lillie's Clefairy ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "56",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Raging Bolt ex",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "123",
-     "inclusion": 0.84
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Iron Crown ex",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "81",
-     "inclusion": 0.67
-    },
-    {
-     "count": 1,
-     "name": "Wellspring Mask Ogerpon ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "64",
-     "inclusion": 0.99
-    },
-    {
-     "count": 1,
-     "name": "Chien-Pao",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "56",
-     "inclusion": 0.97
-    },
-    {
-     "count": 1,
-     "name": "Enamorus",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "93",
-     "inclusion": 0.54
-    },
-    {
-     "count": 4,
-     "name": "Crispin",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "133",
-     "inclusion": 0.92
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Cyrano",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "170",
-     "inclusion": 0.97
-    },
-    {
-     "count": 1,
-     "name": "Ciphermaniac's Codebreaking",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "145",
-     "inclusion": 0.93
-    },
-    {
-     "count": 4,
-     "name": "Energy Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "115",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.99
-    },
-    {
-     "count": 2,
-     "name": "Glass Trumpet",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "135",
-     "inclusion": 0.83
-    },
-    {
-     "count": 1,
-     "name": "Prime Catcher",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "157",
-     "inclusion": 0.27
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.86
-    },
-    {
-     "count": 1,
-     "name": "Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "130",
-     "inclusion": 0.06
-    },
-    {
-     "count": 4,
-     "name": "Area Zero Underdepths",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 6,
-     "name": "Grass Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "9",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Lightning Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "12",
-     "inclusion": 0.85
-    },
-    {
-     "count": 2,
-     "name": "Fighting Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "14",
-     "inclusion": 0.89
-    },
-    {
-     "count": 2,
-     "name": "Psychic Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "13",
-     "inclusion": 0.94
-    },
-    {
-     "count": 1,
-     "name": "Water Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "11",
-     "inclusion": 0.9
-    }
-   ]
-  },
-  {
-   "id": "lucario-hariyama",
-   "name": "Lucario Hariyama",
-   "icons": [
-    "lucario-mega",
-    "hariyama"
-   ],
-   "players": 120,
-   "share": 0.0303,
-   "winRate": 0.5127,
-   "topCutRate": 0.1417,
-   "score": 54.5,
-   "list": [
-    {
-     "count": 3,
-     "name": "Riolu",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "76",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Mega Lucario ex",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "77",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Solrock",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "75",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Makuhita",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "72",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Hariyama",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "73",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Lunatone",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "74",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.9
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Judge",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "76",
-     "inclusion": 0.93
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 0.99
-    },
-    {
-     "count": 1,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 0.62
-    },
-    {
-     "count": 1,
-     "name": "Wally's Compassion",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "132",
-     "inclusion": 0.78
-    },
-    {
-     "count": 4,
-     "name": "Fighting Gong",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "116",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.98
-    },
-    {
-     "count": 4,
-     "name": "Premium Power Pro",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "124",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Unfair Stamp",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "165",
-     "inclusion": 0.39
-    },
-    {
-     "count": 1,
-     "name": "Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "130",
-     "inclusion": 0.93
-    },
-    {
-     "count": 2,
-     "name": "Air Balloon",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "181",
-     "inclusion": 0.98
-    },
-    {
-     "count": 3,
-     "name": "Gravity Mountain",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "177",
-     "inclusion": 0.98
-    },
-    {
-     "count": 11,
-     "name": "Fighting Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "14",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "ogerpon-meganium-hydrapple",
-   "name": "Ogerpon Meganium Hydrapple",
-   "icons": [
-    "ogerpon",
-    "hydrapple"
-   ],
-   "players": 128,
-   "share": 0.0323,
-   "winRate": 0.5086,
-   "topCutRate": 0.1328,
-   "score": 53.9,
-   "list": [
-    {
-     "count": 4,
-     "name": "Teal Mask Ogerpon ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "25",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Chikorita",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "8",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Bayleef",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "9",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Meganium",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "10",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Applin",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "17",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Dipplin",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "18",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Hydrapple ex",
-     "category": "Pokemon",
-     "set": "SCR",
-     "number": "14",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Celebi",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "12",
-     "inclusion": 0.97
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Dawn",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "87",
-     "inclusion": 0.63
-    },
-    {
-     "count": 1,
-     "name": "Briar",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "132",
-     "inclusion": 0.72
-    },
-    {
-     "count": 1,
-     "name": "Ciphermaniac's Codebreaking",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "145",
-     "inclusion": 0.55
-    },
-    {
-     "count": 1,
-     "name": "Lana's Aid",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "155",
-     "inclusion": 0.97
-    },
-    {
-     "count": 4,
-     "name": "Bug Catching Set",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "143",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.97
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.95
-    },
-    {
-     "count": 2,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.74
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.39
-    },
-    {
-     "count": 1,
-     "name": "Unfair Stamp",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "165",
-     "inclusion": 0.87
-    },
-    {
-     "count": 1,
-     "name": "Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "130",
-     "inclusion": 0.05
-    },
-    {
-     "count": 3,
-     "name": "Forest of Vitality",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "117",
-     "inclusion": 1
-    },
-    {
-     "count": 13,
-     "name": "Grass Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "9",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "n-zoroark",
-   "name": "N's Zoroark",
-   "icons": [
-    "zoroark"
-   ],
-   "players": 222,
-   "share": 0.056,
-   "winRate": 0.4792,
-   "topCutRate": 0.1216,
-   "score": 53.7,
-   "list": [
-    {
-     "count": 4,
-     "name": "N's Zorua",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "97",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "N's Zoroark ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "98",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Yveltal",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "88",
-     "inclusion": 0.47
-    },
-    {
-     "count": 2,
-     "name": "N's Zekrom",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "155",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "N's Darumaka",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "26",
-     "inclusion": 0.36
-    },
-    {
-     "count": 1,
-     "name": "N's Darmanitan",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "27",
-     "inclusion": 0.36
-    },
-    {
-     "count": 1,
-     "name": "Pecharunt ex",
-     "category": "Pokemon",
-     "set": "SFA",
-     "number": "39",
-     "inclusion": 0.99
-    },
-    {
-     "count": 1,
-     "name": "Tatsugiri",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "131",
-     "inclusion": 0.61
-    },
-    {
-     "count": 1,
-     "name": "Munkidori",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "95",
-     "inclusion": 0.96
-    },
-    {
-     "count": 1,
-     "name": "Psyduck",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "39",
-     "inclusion": 0.09
-    },
-    {
-     "count": 1,
-     "name": "N's Reshiram",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "116",
-     "inclusion": 0.82
-    },
-    {
-     "count": 4,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Judge",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "76",
-     "inclusion": 0.73
-    },
-    {
-     "count": 1,
-     "name": "Black Belt's Training",
-     "category": "Trainer",
-     "set": "JTG",
-     "number": "143",
-     "inclusion": 0.95
-    },
-    {
-     "count": 1,
-     "name": "Cyrano",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "170",
-     "inclusion": 0.99
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "N's PP Up",
-     "category": "Trainer",
-     "set": "JTG",
-     "number": "153",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.97
-    },
-    {
-     "count": 2,
-     "name": "Binding Mochi",
-     "category": "Trainer",
-     "set": "PRE",
-     "number": "95",
-     "inclusion": 0.91
-    },
-    {
-     "count": 1,
-     "name": "Hero's Cape",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "152",
-     "inclusion": 0.16
-    },
-    {
-     "count": 2,
-     "name": "N's Castle",
-     "category": "Trainer",
-     "set": "JTG",
-     "number": "152",
-     "inclusion": 0.74
-    },
-    {
-     "count": 8,
-     "name": "Darkness Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "15",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "mega-excadrill-ex",
-   "name": "Mega Excadrill",
-   "icons": [
-    "excadrill-mega"
-   ],
-   "players": 149,
-   "share": 0.0376,
-   "winRate": 0.5007,
-   "topCutRate": 0.0872,
-   "score": 51.7,
-   "list": [
-    {
-     "count": 4,
-     "name": "Beldum",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "113",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Metang",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Metagross",
-     "category": "Pokemon",
-     "set": "CRI",
-     "number": "61",
-     "inclusion": 0.98
-    },
-    {
-     "count": 2,
-     "name": "Drilbur",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "46",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Mega Excadrill ex",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "65",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Genesect ex",
-     "category": "Pokemon",
-     "set": "BLK",
-     "number": "67",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.4
-    },
-    {
-     "count": 1,
-     "name": "Mew ex",
-     "category": "Pokemon",
-     "set": "30C",
-     "number": "66",
-     "inclusion": 0.02
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.7
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.72
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 0.84
-    },
-    {
-     "count": 1,
-     "name": "Xerosic's Machinations",
-     "category": "Trainer",
-     "set": "SFA",
-     "number": "64",
-     "inclusion": 0.1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Transceiver",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "178",
-     "inclusion": 0.35
-    },
-    {
-     "count": 2,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.6
-    },
-    {
-     "count": 1,
-     "name": "Energy Recycler",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "164",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.17
-    },
-    {
-     "count": 1,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.73
-    },
-    {
-     "count": 1,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 0.99
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.77
-    },
-    {
-     "count": 1,
-     "name": "Precious Trolley",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "185",
-     "inclusion": 0.46
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Watchtower",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "180",
-     "inclusion": 0.13
-    },
-    {
-     "count": 1,
-     "name": "Gravity Mountain",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "177",
-     "inclusion": 0.43
-    },
-    {
-     "count": 15,
-     "name": "Metal Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "16",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "tera-box",
-   "name": "Tera Box",
-   "icons": [
-    "noctowl",
-    "ogerpon-wellspring"
-   ],
-   "players": 5,
-   "share": 0.0013,
-   "winRate": 0.6034,
-   "topCutRate": 0.4,
-   "score": 50.9,
-   "list": [
-    {
-     "count": 3,
-     "name": "Hoothoot",
-     "category": "Pokemon",
-     "set": "SCR",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Noctowl",
-     "category": "Pokemon",
-     "set": "SCR",
-     "number": "115",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Mega Kangaskhan ex",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "104",
-     "inclusion": 0.8
-    },
-    {
-     "count": 2,
-     "name": "Fan Rotom",
-     "category": "Pokemon",
-     "set": "SCR",
-     "number": "118",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Teal Mask Ogerpon ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "25",
-     "inclusion": 0.8
-    },
-    {
-     "count": 2,
-     "name": "Wellspring Mask Ogerpon ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "64",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Koraidon ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "121",
-     "inclusion": 0.2
-    },
-    {
-     "count": 1,
-     "name": "Terapagos ex",
-     "category": "Pokemon",
-     "set": "SCR",
-     "number": "128",
-     "inclusion": 0.8
-    },
-    {
-     "count": 1,
-     "name": "Latias ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "76",
-     "inclusion": 0.8
-    },
-    {
-     "count": 1,
-     "name": "Iron Leaves ex",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "25",
-     "inclusion": 0.6
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.8
-    },
-    {
-     "count": 1,
-     "name": "Lillie's Clefairy ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "56",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.8
-    },
-    {
-     "count": 1,
-     "name": "Chien-Pao",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "56",
-     "inclusion": 0.8
-    },
-    {
-     "count": 3,
-     "name": "Crispin",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "133",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Cyrano",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "170",
-     "inclusion": 0.6
-    },
-    {
-     "count": 1,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Energy Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "115",
-     "inclusion": 0.8
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "130",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Glass Trumpet",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "135",
-     "inclusion": 0.4
-    },
-    {
-     "count": 1,
-     "name": "Tera Orb",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "189",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Sparkling Crystal",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "142",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Area Zero Underdepths",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Grass Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "9",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Water Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "11",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Psychic Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "13",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Lightning Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "12",
-     "inclusion": 0.6
-    },
-    {
-     "count": 1,
-     "name": "Fighting Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "14",
-     "inclusion": 0.4
-    }
-   ]
-  },
-  {
    "id": "dragapult-blaziken",
    "name": "Dragapult Blaziken",
    "icons": [
     "dragapult",
     "blaziken"
    ],
-   "players": 106,
-   "share": 0.0267,
-   "winRate": 0.5066,
-   "topCutRate": 0.0943,
-   "score": 49.3,
+   "players": 117,
+   "share": 0.0292,
+   "winRate": 0.5177,
+   "topCutRate": 0.0855,
+   "score": 58.7,
    "list": [
     {
      "count": 4,
@@ -1833,39 +975,7 @@
      "category": "Pokemon",
      "set": "TWM",
      "number": "95",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Budew",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "16",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.31
-    },
-    {
-     "count": 1,
-     "name": "Lillie's Clefairy ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "56",
-     "inclusion": 0.44
+     "inclusion": 0.99
     },
     {
      "count": 1,
@@ -1873,7 +983,31 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "142",
-     "inclusion": 0.98
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "Lillie's Clefairy ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "56",
+     "inclusion": 0.45
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Budew",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "16",
+     "inclusion": 1
     },
     {
      "count": 4,
@@ -1905,23 +1039,7 @@
      "category": "Trainer",
      "set": "PFL",
      "number": "87",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Xerosic's Machinations",
-     "category": "Trainer",
-     "set": "SFA",
-     "number": "64",
-     "inclusion": 0.06
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
+     "inclusion": 0.87
     },
     {
      "count": 4,
@@ -1932,12 +1050,28 @@
      "inclusion": 1
     },
     {
-     "count": 3,
+     "count": 4,
      "name": "Poké Pad",
      "category": "Trainer",
      "set": "POR",
      "number": "81",
      "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "125",
+     "inclusion": 0.99
     },
     {
      "count": 2,
@@ -1946,22 +1080,6 @@
      "set": "ASC",
      "number": "196",
      "inclusion": 0.99
-    },
-    {
-     "count": 2,
-     "name": "Rare Candy",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "125",
-     "inclusion": 0.99
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.68
     },
     {
      "count": 1,
@@ -1973,11 +1091,19 @@
     },
     {
      "count": 1,
-     "name": "Jamming Tower",
+     "name": "Special Red Card",
      "category": "Trainer",
-     "set": "TWM",
-     "number": "153",
-     "inclusion": 0.24
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.68
+    },
+    {
+     "count": 2,
+     "name": "Risky Ruins",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "127",
+     "inclusion": 0.7
     },
     {
      "count": 3,
@@ -2001,230 +1127,7 @@
      "category": "Energy",
      "set": "MEE",
      "number": "15",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "dhelmise-pbl",
-   "name": "Dhelmise",
-   "icons": [
-    "dhelmise",
-    "banette"
-   ],
-   "players": 167,
-   "share": 0.0421,
-   "winRate": 0.4893,
-   "topCutRate": 0.0479,
-   "score": 48.6,
-   "list": [
-    {
-     "count": 4,
-     "name": "Shuppet",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "33",
-     "inclusion": 0.98
-    },
-    {
-     "count": 3,
-     "name": "Banette",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "34",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Dhelmise",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "39",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Dunsparce",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "120",
-     "inclusion": 0.61
-    },
-    {
-     "count": 2,
-     "name": "Dudunsparce",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "129",
-     "inclusion": 0.61
-    },
-    {
-     "count": 1,
-     "name": "Dudunsparce ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "121",
-     "inclusion": 0.27
-    },
-    {
-     "count": 2,
-     "name": "Poltchageist",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "5",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Sinistcha",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "6",
-     "inclusion": 0.93
-    },
-    {
-     "count": 1,
-     "name": "Bloodmoon Ursaluna ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "141",
-     "inclusion": 0.34
-    },
-    {
-     "count": 1,
-     "name": "Latias ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "76",
-     "inclusion": 0.55
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.77
-    },
-    {
-     "count": 1,
-     "name": "Lillie's Clefairy ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "56",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Flutter Mane",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "78",
-     "inclusion": 0.12
-    },
-    {
-     "count": 1,
-     "name": "Patrat",
-     "category": "Pokemon",
-     "set": "CRI",
-     "number": "70",
-     "inclusion": 0.47
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.97
-    },
-    {
-     "count": 3,
-     "name": "Gwynn",
-     "category": "Trainer",
-     "set": "PBL",
-     "number": "78",
-     "inclusion": 0.96
-    },
-    {
-     "count": 3,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
      "inclusion": 0.99
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.99
-    },
-    {
-     "count": 2,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 0.32
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.26
-    },
-    {
-     "count": 3,
-     "name": "Prism Tower",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "80",
-     "inclusion": 0.94
-    },
-    {
-     "count": 4,
-     "name": "Telepathic Psychic Energy",
-     "category": "Energy",
-     "set": "POR",
-     "number": "88",
-     "inclusion": 0.99
-    },
-    {
-     "count": 2,
-     "name": "Psychic Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "13",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Legacy Energy",
-     "category": "Energy",
-     "set": "TWM",
-     "number": "167",
-     "inclusion": 0.62
     }
    ]
   },
@@ -2234,11 +1137,11 @@
    "icons": [
     "slowking"
    ],
-   "players": 185,
-   "share": 0.0467,
-   "winRate": 0.4809,
-   "topCutRate": 0.0595,
-   "score": 48.5,
+   "players": 188,
+   "share": 0.047,
+   "winRate": 0.4927,
+   "topCutRate": 0.0638,
+   "score": 58.1,
    "list": [
     {
      "count": 4,
@@ -2286,7 +1189,7 @@
      "category": "Pokemon",
      "set": "CRI",
      "number": "61",
-     "inclusion": 0.98
+     "inclusion": 0.99
     },
     {
      "count": 1,
@@ -2294,7 +1197,7 @@
      "category": "Pokemon",
      "set": "POR",
      "number": "62",
-     "inclusion": 0.94
+     "inclusion": 0.95
     },
     {
      "count": 1,
@@ -2310,7 +1213,7 @@
      "category": "Pokemon",
      "set": "JTG",
      "number": "56",
-     "inclusion": 0.96
+     "inclusion": 0.97
     },
     {
      "count": 1,
@@ -2318,7 +1221,7 @@
      "category": "Pokemon",
      "set": "30C",
      "number": "72",
-     "inclusion": 0.31
+     "inclusion": 0.32
     },
     {
      "count": 1,
@@ -2326,7 +1229,7 @@
      "category": "Pokemon",
      "set": "PFL",
      "number": "34",
-     "inclusion": 0.21
+     "inclusion": 0.22
     },
     {
      "count": 4,
@@ -2342,7 +1245,7 @@
      "category": "Trainer",
      "set": "TEF",
      "number": "145",
-     "inclusion": 0.98
+     "inclusion": 0.99
     },
     {
      "count": 1,
@@ -2350,7 +1253,7 @@
      "category": "Trainer",
      "set": "SSP",
      "number": "187",
-     "inclusion": 0.31
+     "inclusion": 0.29
     },
     {
      "count": 4,
@@ -2382,7 +1285,7 @@
      "category": "Trainer",
      "set": "ASC",
      "number": "196",
-     "inclusion": 0.99
+     "inclusion": 1
     },
     {
      "count": 1,
@@ -2390,7 +1293,7 @@
      "category": "Trainer",
      "set": "CRI",
      "number": "82",
-     "inclusion": 0.14
+     "inclusion": 0.15
     },
     {
      "count": 1,
@@ -2398,7 +1301,7 @@
      "category": "Trainer",
      "set": "TEF",
      "number": "157",
-     "inclusion": 0.37
+     "inclusion": 0.41
     },
     {
      "count": 1,
@@ -2406,7 +1309,7 @@
      "category": "Trainer",
      "set": "DRI",
      "number": "168",
-     "inclusion": 0.06
+     "inclusion": 0.08
     },
     {
      "count": 4,
@@ -2443,105 +1346,73 @@
    ]
   },
   {
-   "id": "sharpedo-toxtricity",
-   "name": "Sharpedo Toxtricity",
+   "id": "lucario-hariyama",
+   "name": "Lucario Hariyama",
    "icons": [
-    "sharpedo-mega",
-    "toxtricity"
+    "lucario-mega",
+    "hariyama"
    ],
-   "players": 131,
-   "share": 0.033,
-   "winRate": 0.4869,
-   "topCutRate": 0.1145,
-   "score": 48.1,
+   "players": 121,
+   "share": 0.0302,
+   "winRate": 0.4985,
+   "topCutRate": 0.124,
+   "score": 57.7,
    "list": [
     {
      "count": 3,
-     "name": "Carvanha",
+     "name": "Riolu",
      "category": "Pokemon",
-     "set": "PFL",
-     "number": "60",
+     "set": "MEG",
+     "number": "76",
      "inclusion": 1
     },
     {
      "count": 3,
-     "name": "Mega Sharpedo ex",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "61",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Toxel",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "67",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Toxtricity",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "68",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Munkidori",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "95",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Pecharunt ex",
-     "category": "Pokemon",
-     "set": "SFA",
-     "number": "39",
-     "inclusion": 0.99
-    },
-    {
-     "count": 2,
-     "name": "Tatsugiri",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "131",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Chi-Yu",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "59",
-     "inclusion": 0.3
-    },
-    {
-     "count": 1,
-     "name": "Yveltal",
+     "name": "Mega Lucario ex",
      "category": "Pokemon",
      "set": "MEG",
-     "number": "88",
-     "inclusion": 0.69
+     "number": "77",
+     "inclusion": 1
     },
     {
-     "count": 4,
-     "name": "Boss's Orders",
-     "category": "Trainer",
+     "count": 3,
+     "name": "Solrock",
+     "category": "Pokemon",
      "set": "MEG",
-     "number": "114",
+     "number": "75",
      "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Makuhita",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "72",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Hariyama",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "73",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Lunatone",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "74",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.88
     },
     {
      "count": 4,
@@ -2557,1170 +1428,10 @@
      "category": "Trainer",
      "set": "POR",
      "number": "76",
-     "inclusion": 0.96
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 0.9
-    },
-    {
-     "count": 1,
-     "name": "Cyrano",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "170",
-     "inclusion": 0.07
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.99
-    },
-    {
-     "count": 3,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.94
-    },
-    {
-     "count": 1,
-     "name": "Unfair Stamp",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "165",
-     "inclusion": 0.69
-    },
-    {
-     "count": 3,
-     "name": "Binding Mochi",
-     "category": "Trainer",
-     "set": "PRE",
-     "number": "95",
-     "inclusion": 0.98
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Watchtower",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "180",
-     "inclusion": 0.89
-    },
-    {
-     "count": 9,
-     "name": "Darkness Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "15",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "alakazam-dudunsparce",
-   "name": "Alakazam Dudunsparce",
-   "icons": [
-    "alakazam",
-    "dudunsparce"
-   ],
-   "players": 131,
-   "share": 0.033,
-   "winRate": 0.4895,
-   "topCutRate": 0.084,
-   "score": 47.3,
-   "list": [
-    {
-     "count": 4,
-     "name": "Abra",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "54",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Kadabra",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "55",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Alakazam",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "56",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Dunsparce",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "120",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Dudunsparce",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "129",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Genesect",
-     "category": "Pokemon",
-     "set": "SFA",
-     "number": "40",
-     "inclusion": 0.83
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.82
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.88
-    },
-    {
-     "count": 1,
-     "name": "Elgyem",
-     "category": "Pokemon",
-     "set": "BLK",
-     "number": "40",
-     "inclusion": 0.22
-    },
-    {
-     "count": 1,
-     "name": "Lillie's Clefairy ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "56",
-     "inclusion": 0.26
-    },
-    {
-     "count": 4,
-     "name": "Dawn",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "87",
-     "inclusion": 0.99
-    },
-    {
-     "count": 3,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 0.98
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Eri",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "146",
-     "inclusion": 0.73
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Rare Candy",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "125",
-     "inclusion": 0.98
-    },
-    {
-     "count": 2,
-     "name": "Wondrous Patch",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "94",
-     "inclusion": 0.35
-    },
-    {
-     "count": 1,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.71
-    },
-    {
-     "count": 1,
-     "name": "Sacred Ash",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "168",
-     "inclusion": 0.97
-    },
-    {
-     "count": 3,
-     "name": "Handheld Fan",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "150",
-     "inclusion": 0.5
-    },
-    {
-     "count": 4,
-     "name": "Battle Cage",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "85",
-     "inclusion": 0.89
-    },
-    {
-     "count": 4,
-     "name": "Telepathic Psychic Energy",
-     "category": "Energy",
-     "set": "POR",
-     "number": "88",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Psychic Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "13",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Enriching Energy",
-     "category": "Energy",
-     "set": "SSP",
-     "number": "191",
-     "inclusion": 0.98
-    }
-   ]
-  },
-  {
-   "id": "mega-starmie-ex",
-   "name": "Mega Starmie",
-   "icons": [
-    "starmie-mega"
-   ],
-   "players": 34,
-   "share": 0.0086,
-   "winRate": 0.561,
-   "topCutRate": 0.0588,
-   "score": 47.1,
-   "list": [
-    {
-     "count": 3,
-     "name": "Staryu",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "20",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Mega Starmie ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "21",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Snorunt",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "46",
-     "inclusion": 0.97
-    },
-    {
-     "count": 2,
-     "name": "Mega Froslass ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "47",
-     "inclusion": 0.97
-    },
-    {
-     "count": 2,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.65
-    },
-    {
-     "count": 1,
-     "name": "Buneary",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "83",
-     "inclusion": 0.12
-    },
-    {
-     "count": 1,
-     "name": "Mega Lopunny ex",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "84",
-     "inclusion": 0.12
-    },
-    {
-     "count": 1,
-     "name": "Latias ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "76",
-     "inclusion": 0.24
-    },
-    {
-     "count": 4,
-     "name": "Salvatore",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "160",
-     "inclusion": 0.85
-    },
-    {
-     "count": 4,
-     "name": "Wally's Compassion",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "132",
-     "inclusion": 0.94
-    },
-    {
-     "count": 3,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 0.97
-    },
-    {
-     "count": 3,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.97
-    },
-    {
-     "count": 2,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 0.94
-    },
-    {
-     "count": 1,
-     "name": "Xerosic's Machinations",
-     "category": "Trainer",
-     "set": "SFA",
-     "number": "64",
-     "inclusion": 0.53
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 0.97
-    },
-    {
-     "count": 2,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.71
-    },
-    {
-     "count": 2,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.74
-    },
-    {
-     "count": 2,
-     "name": "Roto-Stick",
-     "category": "Trainer",
-     "set": "PRE",
-     "number": "127",
-     "inclusion": 0.06
-    },
-    {
-     "count": 2,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.71
-    },
-    {
-     "count": 2,
-     "name": "Battle Cage",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "85",
-     "inclusion": 0.5
-    },
-    {
-     "count": 8,
-     "name": "Water Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "11",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Ignition Energy",
-     "category": "Energy",
-     "set": "WHT",
-     "number": "86",
-     "inclusion": 0.94
-    },
-    {
-     "count": 2,
-     "name": "Bubbly Water Energy",
-     "category": "Energy",
-     "set": "CRI",
-     "number": "84",
-     "inclusion": 0.56
-    },
-    {
-     "count": 1,
-     "name": "Legacy Energy",
-     "category": "Energy",
-     "set": "TWM",
-     "number": "167",
-     "inclusion": 0.5
-    }
-   ]
-  },
-  {
-   "id": "rockets-honchkrow",
-   "name": "Rocket's Honchkrow",
-   "icons": [
-    "honchkrow",
-    "porygon2"
-   ],
-   "players": 49,
-   "share": 0.0124,
-   "winRate": 0.527,
-   "topCutRate": 0.102,
-   "score": 46.4,
-   "list": [
-    {
-     "count": 4,
-     "name": "Team Rocket's Murkrow",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "127",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Team Rocket's Honchkrow",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "127",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Porygon",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "153",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Team Rocket's Porygon2",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "154",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Articuno",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "51",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Ariana",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "171",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Giovanni",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "174",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Archer",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "170",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Proton",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "177",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Roto-Stick",
-     "category": "Trainer",
-     "set": "PRE",
-     "number": "127",
-     "inclusion": 0.98
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Transceiver",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "178",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.22
-    },
-    {
-     "count": 1,
-     "name": "Miracle Headset",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "183",
-     "inclusion": 0.96
-    },
-    {
-     "count": 1,
-     "name": "Lucky Helmet",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "158",
-     "inclusion": 0.47
-    },
-    {
-     "count": 3,
-     "name": "Team Rocket's Factory",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "173",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Energy",
-     "category": "Energy",
-     "set": "DRI",
-     "number": "182",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ignition Energy",
-     "category": "Energy",
-     "set": "WHT",
-     "number": "86",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "dragapult-dusknoir",
-   "name": "Dragapult Dusknoir",
-   "icons": [
-    "dragapult",
-    "dusknoir"
-   ],
-   "players": 201,
-   "share": 0.0507,
-   "winRate": 0.4561,
-   "topCutRate": 0.0796,
-   "score": 44.4,
-   "list": [
-    {
-     "count": 4,
-     "name": "Dreepy",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "128",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Drakloak",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "129",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Dragapult ex",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "130",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Duskull",
-     "category": "Pokemon",
-     "set": "PRE",
-     "number": "35",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Dusclops",
-     "category": "Pokemon",
-     "set": "PRE",
-     "number": "36",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Dusknoir",
-     "category": "Pokemon",
-     "set": "PRE",
-     "number": "37",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Budew",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "16",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Moltres",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "14",
-     "inclusion": 0.48
-    },
-    {
-     "count": 1,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.85
-    },
-    {
-     "count": 1,
-     "name": "Munkidori",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "95",
-     "inclusion": 0.56
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.97
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.2
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.99
-    },
-    {
-     "count": 3,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Crispin",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "133",
-     "inclusion": 0.88
-    },
-    {
-     "count": 1,
-     "name": "Judge",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "76",
-     "inclusion": 0.52
-    },
-    {
-     "count": 1,
-     "name": "Rosa's Encouragement",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "84",
-     "inclusion": 0.7
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.9
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.98
-    },
-    {
-     "count": 3,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.99
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.82
-    },
-    {
-     "count": 1,
-     "name": "Unfair Stamp",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "165",
-     "inclusion": 0.75
-    },
-    {
-     "count": 1,
-     "name": "Team Rocket's Watchtower",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "180",
-     "inclusion": 0.63
-    },
-    {
-     "count": 1,
-     "name": "Jamming Tower",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "153",
-     "inclusion": 0.66
-    },
-    {
-     "count": 3,
-     "name": "Psychic Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "13",
-     "inclusion": 0.89
-    },
-    {
-     "count": 3,
-     "name": "Fire Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "10",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Darkness Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "15",
-     "inclusion": 0.55
-    }
-   ]
-  },
-  {
-   "id": "lopunny-dudunsparce",
-   "name": "Lopunny Dudunsparce",
-   "icons": [
-    "lopunny-mega",
-    "dudunsparce"
-   ],
-   "players": 169,
-   "share": 0.0426,
-   "winRate": 0.4654,
-   "topCutRate": 0.0769,
-   "score": 44.2,
-   "list": [
-    {
-     "count": 3,
-     "name": "Dunsparce",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "120",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Dunsparce",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "128",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Dudunsparce",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "129",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Dudunsparce ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "121",
-     "inclusion": 0.28
-    },
-    {
-     "count": 3,
-     "name": "Snorunt",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "46",
-     "inclusion": 0.14
-    },
-    {
-     "count": 2,
-     "name": "Mega Froslass ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "47",
-     "inclusion": 0.14
-    },
-    {
-     "count": 2,
-     "name": "Buneary",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "83",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Mega Lopunny ex",
-     "category": "Pokemon",
-     "set": "PFL",
-     "number": "84",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Fan Rotom",
-     "category": "Pokemon",
-     "set": "SCR",
-     "number": "118",
-     "inclusion": 0.96
-    },
-    {
-     "count": 1,
-     "name": "Psyduck",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "39",
-     "inclusion": 0.78
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.99
-    },
-    {
-     "count": 4,
-     "name": "Wally's Compassion",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "132",
-     "inclusion": 0.98
-    },
-    {
-     "count": 3,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 0.99
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 0.99
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.99
-    },
-    {
-     "count": 2,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.47
-    },
-    {
-     "count": 2,
-     "name": "Air Balloon",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "181",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Hero's Cape",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "152",
-     "inclusion": 0.12
-    },
-    {
-     "count": 3,
-     "name": "Battle Cage",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "85",
      "inclusion": 0.93
     },
     {
-     "count": 4,
-     "name": "Mist Energy",
-     "category": "Energy",
-     "set": "TEF",
-     "number": "161",
-     "inclusion": 0.99
-    },
-    {
-     "count": 3,
-     "name": "Bubbly Water Energy",
-     "category": "Energy",
-     "set": "CRI",
-     "number": "84",
-     "inclusion": 0.04
-    }
-   ]
-  },
-  {
-   "id": "crustle-dri",
-   "name": "Crustle",
-   "icons": [
-    "crustle"
-   ],
-   "players": 76,
-   "share": 0.0192,
-   "winRate": 0.4956,
-   "topCutRate": 0.0789,
-   "score": 42.7,
-   "list": [
-    {
-     "count": 4,
-     "name": "Mega Kangaskhan ex",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "104",
-     "inclusion": 0.84
-    },
-    {
-     "count": 3,
-     "name": "Dwebble",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "11",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Crustle",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "12",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.99
-    },
-    {
-     "count": 4,
+     "count": 2,
      "name": "Boss's Orders",
      "category": "Trainer",
      "set": "MEG",
@@ -3728,492 +1439,23 @@
      "inclusion": 1
     },
     {
-     "count": 4,
+     "count": 1,
      "name": "Team Rocket's Petrel",
      "category": "Trainer",
      "set": "DRI",
      "number": "176",
-     "inclusion": 0.96
-    },
-    {
-     "count": 3,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 0.91
-    },
-    {
-     "count": 2,
-     "name": "Eri",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "146",
-     "inclusion": 0.84
-    },
-    {
-     "count": 1,
-     "name": "Xerosic's Machinations",
-     "category": "Trainer",
-     "set": "SFA",
-     "number": "64",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Pokémon Center Lady",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "123",
-     "inclusion": 0.76
-    },
-    {
-     "count": 1,
-     "name": "Bianca's Devotion",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "142",
-     "inclusion": 0.53
-    },
-    {
-     "count": 4,
-     "name": "Jumbo Ice Cream",
-     "category": "Trainer",
-     "set": "PFL",
-     "number": "91",
-     "inclusion": 0.95
-    },
-    {
-     "count": 3,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.95
-    },
-    {
-     "count": 2,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 0.95
-    },
-    {
-     "count": 1,
-     "name": "Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "130",
-     "inclusion": 0.91
-    },
-    {
-     "count": 1,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.13
-    },
-    {
-     "count": 1,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 0.84
-    },
-    {
-     "count": 1,
-     "name": "Hero's Cape",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "152",
-     "inclusion": 0.95
-    },
-    {
-     "count": 1,
-     "name": "Handheld Fan",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "150",
      "inclusion": 0.62
     },
     {
-     "count": 2,
-     "name": "Team Rocket's Factory",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "173",
-     "inclusion": 0.72
-    },
-    {
      "count": 1,
-     "name": "Lumiose City",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "77",
-     "inclusion": 0.72
-    },
-    {
-     "count": 4,
-     "name": "Mist Energy",
-     "category": "Energy",
-     "set": "TEF",
-     "number": "161",
-     "inclusion": 0.95
-    },
-    {
-     "count": 4,
-     "name": "Spiky Energy",
-     "category": "Energy",
-     "set": "JTG",
-     "number": "159",
-     "inclusion": 0.91
-    },
-    {
-     "count": 4,
-     "name": "Growing Grass Energy",
-     "category": "Energy",
-     "set": "POR",
-     "number": "86",
-     "inclusion": 0.95
-    },
-    {
-     "count": 1,
-     "name": "Grass Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "9",
-     "inclusion": 0.72
-    }
-   ]
-  },
-  {
-   "id": "grimmsnarl-froslass",
-   "name": "Grimmsnarl Froslass",
-   "icons": [
-    "grimmsnarl",
-    "froslass"
-   ],
-   "players": 66,
-   "share": 0.0166,
-   "winRate": 0.4971,
-   "topCutRate": 0.0758,
-   "score": 41.6,
-   "list": [
-    {
-     "count": 4,
-     "name": "Munkidori",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "95",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Marnie's Impidimp",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "134",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Marnie's Morgrem",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "135",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Marnie's Grimmsnarl ex",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "136",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Snorunt",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "46",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Froslass",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "53",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Budew",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "16",
-     "inclusion": 0.98
-    },
-    {
-     "count": 1,
-     "name": "Yveltal",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "88",
-     "inclusion": 0.89
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.77
-    },
-    {
-     "count": 1,
-     "name": "Psyduck",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "39",
-     "inclusion": 0.36
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
+     "name": "Wally's Compassion",
      "category": "Trainer",
      "set": "MEG",
-     "number": "119",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 0.94
-    },
-    {
-     "count": 2,
-     "name": "Gwynn",
-     "category": "Trainer",
-     "set": "PBL",
-     "number": "78",
-     "inclusion": 0.85
+     "number": "132",
+     "inclusion": 0.8
     },
     {
      "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.98
-    },
-    {
-     "count": 2,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Rare Candy",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "125",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Secret Box",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "163",
-     "inclusion": 0.88
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "130",
-     "inclusion": 0.05
-    },
-    {
-     "count": 1,
-     "name": "Energy Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "115",
-     "inclusion": 0.59
-    },
-    {
-     "count": 1,
-     "name": "Air Balloon",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "181",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Spikemuth Gym",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "169",
-     "inclusion": 1
-    },
-    {
-     "count": 9,
-     "name": "Darkness Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "15",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "cynthia-garchomp-ex",
-   "name": "Cynthia's Garchomp",
-   "icons": [
-    "garchomp"
-   ],
-   "players": 70,
-   "share": 0.0177,
-   "winRate": 0.4875,
-   "topCutRate": 0.0857,
-   "score": 40.6,
-   "list": [
-    {
-     "count": 4,
-     "name": "Cynthia's Gible",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "102",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Cynthia's Gabite",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "103",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Cynthia's Garchomp ex",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "104",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Cynthia's Roselia",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "7",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Cynthia's Roserade",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "8",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Cynthia's Spiritomb",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "129",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.97
-    },
-    {
-     "count": 4,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 0.87
-    },
-    {
-     "count": 1,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 0.3
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
      "name": "Fighting Gong",
      "category": "Trainer",
      "set": "MEG",
@@ -4221,44 +1463,28 @@
      "inclusion": 1
     },
     {
-     "count": 2,
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.97
+    },
+    {
+     "count": 4,
      "name": "Premium Power Pro",
      "category": "Trainer",
      "set": "MEG",
      "number": "124",
-     "inclusion": 0.89
+     "inclusion": 1
     },
     {
-     "count": 2,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.51
-    },
-    {
-     "count": 1,
-     "name": "Special Red Card",
-     "category": "Trainer",
-     "set": "CRI",
-     "number": "82",
-     "inclusion": 0.5
-    },
-    {
-     "count": 1,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.87
-    },
-    {
-     "count": 1,
-     "name": "Switch",
+     "count": 4,
+     "name": "Ultra Ball",
      "category": "Trainer",
      "set": "MEG",
-     "number": "130",
-     "inclusion": 0.63
+     "number": "131",
+     "inclusion": 1
     },
     {
      "count": 1,
@@ -4266,39 +1492,39 @@
      "category": "Trainer",
      "set": "TWM",
      "number": "165",
-     "inclusion": 0.14
-    },
-    {
-     "count": 3,
-     "name": "Cynthia's Power Weight",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "162",
-     "inclusion": 1
+     "inclusion": 0.42
     },
     {
      "count": 1,
-     "name": "Forest of Vitality",
+     "name": "Switch",
      "category": "Trainer",
      "set": "MEG",
-     "number": "117",
-     "inclusion": 0.19
+     "number": "130",
+     "inclusion": 0.94
     },
     {
-     "count": 4,
+     "count": 2,
+     "name": "Air Balloon",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "181",
+     "inclusion": 0.99
+    },
+    {
+     "count": 3,
+     "name": "Gravity Mountain",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "177",
+     "inclusion": 0.98
+    },
+    {
+     "count": 11,
      "name": "Fighting Energy",
      "category": "Energy",
      "set": "MEE",
      "number": "14",
      "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Rocky Fighting Energy",
-     "category": "Energy",
-     "set": "POR",
-     "number": "87",
-     "inclusion": 0.97
     }
    ]
   },
@@ -4308,11 +1534,11 @@
    "icons": [
     "greninja"
    ],
-   "players": 45,
-   "share": 0.0114,
-   "winRate": 0.4977,
-   "topCutRate": 0.0889,
-   "score": 39.4,
+   "players": 44,
+   "share": 0.011,
+   "winRate": 0.5378,
+   "topCutRate": 0.1591,
+   "score": 57.4,
    "list": [
     {
      "count": 3,
@@ -4376,7 +1602,7 @@
      "category": "Pokemon",
      "set": "POR",
      "number": "62",
-     "inclusion": 0.96
+     "inclusion": 0.98
     },
     {
      "count": 1,
@@ -4384,7 +1610,7 @@
      "category": "Pokemon",
      "set": "POR",
      "number": "20",
-     "inclusion": 0.69
+     "inclusion": 0.57
     },
     {
      "count": 1,
@@ -4392,7 +1618,7 @@
      "category": "Pokemon",
      "set": "POR",
      "number": "21",
-     "inclusion": 0.69
+     "inclusion": 0.57
     },
     {
      "count": 1,
@@ -4400,7 +1626,7 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "46",
-     "inclusion": 0.71
+     "inclusion": 0.66
     },
     {
      "count": 1,
@@ -4408,7 +1634,7 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "47",
-     "inclusion": 0.71
+     "inclusion": 0.66
     },
     {
      "count": 1,
@@ -4416,7 +1642,7 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "142",
-     "inclusion": 0.98
+     "inclusion": 0.95
     },
     {
      "count": 4,
@@ -4472,7 +1698,7 @@
      "category": "Trainer",
      "set": "MEG",
      "number": "131",
-     "inclusion": 1
+     "inclusion": 0.98
     },
     {
      "count": 2,
@@ -4488,7 +1714,7 @@
      "category": "Trainer",
      "set": "MEG",
      "number": "130",
-     "inclusion": 0.8
+     "inclusion": 0.75
     },
     {
      "count": 1,
@@ -4496,7 +1722,7 @@
      "category": "Trainer",
      "set": "ASC",
      "number": "196",
-     "inclusion": 1
+     "inclusion": 0.98
     },
     {
      "count": 1,
@@ -4512,7 +1738,7 @@
      "category": "Trainer",
      "set": "SCR",
      "number": "136",
-     "inclusion": 0.98
+     "inclusion": 1
     },
     {
      "count": 1,
@@ -4520,7 +1746,7 @@
      "category": "Trainer",
      "set": "TWM",
      "number": "153",
-     "inclusion": 0.24
+     "inclusion": 0.39
     },
     {
      "count": 5,
@@ -4536,7 +1762,7 @@
      "category": "Energy",
      "set": "WHT",
      "number": "86",
-     "inclusion": 0.98
+     "inclusion": 0.95
     },
     {
      "count": 1,
@@ -4544,7 +1770,1071 @@
      "category": "Energy",
      "set": "CRI",
      "number": "84",
-     "inclusion": 0.53
+     "inclusion": 0.5
+    }
+   ]
+  },
+  {
+   "id": "alakazam-dudunsparce",
+   "name": "Alakazam Dudunsparce",
+   "icons": [
+    "alakazam",
+    "dudunsparce"
+   ],
+   "players": 137,
+   "share": 0.0342,
+   "winRate": 0.4921,
+   "topCutRate": 0.0949,
+   "score": 55.9,
+   "list": [
+    {
+     "count": 4,
+     "name": "Abra",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "54",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Kadabra",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "55",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Alakazam",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "56",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dunsparce",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "120",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dudunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "129",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.89
+    },
+    {
+     "count": 1,
+     "name": "Fan Rotom",
+     "category": "Pokemon",
+     "set": "SCR",
+     "number": "118",
+     "inclusion": 0.07
+    },
+    {
+     "count": 1,
+     "name": "Genesect",
+     "category": "Pokemon",
+     "set": "SFA",
+     "number": "40",
+     "inclusion": 0.84
+    },
+    {
+     "count": 1,
+     "name": "Dedenne",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "87",
+     "inclusion": 0.27
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.85
+    },
+    {
+     "count": 4,
+     "name": "Dawn",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "87",
+     "inclusion": 0.99
+    },
+    {
+     "count": 3,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Xerosic's Machinations",
+     "category": "Trainer",
+     "set": "SFA",
+     "number": "64",
+     "inclusion": 0.12
+    },
+    {
+     "count": 1,
+     "name": "Eri",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "146",
+     "inclusion": 0.74
+    },
+    {
+     "count": 1,
+     "name": "Lana's Aid",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "155",
+     "inclusion": 0.7
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "125",
+     "inclusion": 0.98
+    },
+    {
+     "count": 2,
+     "name": "Enhanced Hammer",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "148",
+     "inclusion": 0.69
+    },
+    {
+     "count": 1,
+     "name": "Sacred Ash",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "168",
+     "inclusion": 0.96
+    },
+    {
+     "count": 2,
+     "name": "Air Balloon",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "181",
+     "inclusion": 0.63
+    },
+    {
+     "count": 4,
+     "name": "Battle Cage",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "85",
+     "inclusion": 0.88
+    },
+    {
+     "count": 4,
+     "name": "Telepathic Psychic Energy",
+     "category": "Energy",
+     "set": "POR",
+     "number": "88",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Psychic Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "13",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Enriching Energy",
+     "category": "Energy",
+     "set": "SSP",
+     "number": "191",
+     "inclusion": 0.98
+    }
+   ]
+  },
+  {
+   "id": "dhelmise-pbl",
+   "name": "Dhelmise",
+   "icons": [
+    "dhelmise",
+    "banette"
+   ],
+   "players": 150,
+   "share": 0.0375,
+   "winRate": 0.495,
+   "topCutRate": 0.0533,
+   "score": 54.9,
+   "list": [
+    {
+     "count": 4,
+     "name": "Mega Kangaskhan ex",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "104",
+     "inclusion": 0.03
+    },
+    {
+     "count": 4,
+     "name": "Dhelmise",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "39",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Togepi",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "70",
+     "inclusion": 0.03
+    },
+    {
+     "count": 1,
+     "name": "Togetic",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "71",
+     "inclusion": 0.03
+    },
+    {
+     "count": 2,
+     "name": "Togekiss",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "72",
+     "inclusion": 0.03
+    },
+    {
+     "count": 2,
+     "name": "Sinistcha",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "6",
+     "inclusion": 0.93
+    },
+    {
+     "count": 2,
+     "name": "Latias ex",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "76",
+     "inclusion": 0.55
+    },
+    {
+     "count": 1,
+     "name": "Shuppet",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "33",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Banette",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "34",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Bloodmoon Ursaluna ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "141",
+     "inclusion": 0.31
+    },
+    {
+     "count": 1,
+     "name": "Lillie's Clefairy ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "56",
+     "inclusion": 0.98
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.18
+    },
+    {
+     "count": 4,
+     "name": "Ciphermaniac's Codebreaking",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "145",
+     "inclusion": 0.02
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 0.14
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.13
+    },
+    {
+     "count": 3,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Brilliant Blender",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "164",
+     "inclusion": 0.27
+    },
+    {
+     "count": 1,
+     "name": "Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "130",
+     "inclusion": 0.25
+    },
+    {
+     "count": 1,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "125",
+     "inclusion": 0.04
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.28
+    },
+    {
+     "count": 1,
+     "name": "Team Rocket's Factory",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "173",
+     "inclusion": 0.01
+    },
+    {
+     "count": 4,
+     "name": "Telepathic Psychic Energy",
+     "category": "Energy",
+     "set": "POR",
+     "number": "88",
+     "inclusion": 0.99
+    },
+    {
+     "count": 3,
+     "name": "Psychic Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "13",
+     "inclusion": 0.97
+    }
+   ]
+  },
+  {
+   "id": "n-zoroark",
+   "name": "N's Zoroark",
+   "icons": [
+    "zoroark"
+   ],
+   "players": 220,
+   "share": 0.055,
+   "winRate": 0.4569,
+   "topCutRate": 0.0955,
+   "score": 54.7,
+   "list": [
+    {
+     "count": 4,
+     "name": "N's Zorua",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "97",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "N's Zoroark ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "98",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "N's Zekrom",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "155",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "95",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "N's Reshiram",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "116",
+     "inclusion": 0.82
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.31
+    },
+    {
+     "count": 1,
+     "name": "Pecharunt ex",
+     "category": "Pokemon",
+     "set": "SFA",
+     "number": "39",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Yveltal",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "88",
+     "inclusion": 0.52
+    },
+    {
+     "count": 1,
+     "name": "Budew",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "16",
+     "inclusion": 0.35
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Black Belt's Training",
+     "category": "Trainer",
+     "set": "JTG",
+     "number": "143",
+     "inclusion": 0.95
+    },
+    {
+     "count": 1,
+     "name": "Cyrano",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "170",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Judge",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "76",
+     "inclusion": 0.76
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "N's PP Up",
+     "category": "Trainer",
+     "set": "JTG",
+     "number": "153",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Unfair Stamp",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "165",
+     "inclusion": 0.16
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.97
+    },
+    {
+     "count": 2,
+     "name": "Punk Helmet",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "92",
+     "inclusion": 0.15
+    },
+    {
+     "count": 2,
+     "name": "N's Castle",
+     "category": "Trainer",
+     "set": "JTG",
+     "number": "152",
+     "inclusion": 0.77
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Watchtower",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "180",
+     "inclusion": 0.72
+    },
+    {
+     "count": 7,
+     "name": "Darkness Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "15",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "mega-excadrill-ex",
+   "name": "Mega Excadrill",
+   "icons": [
+    "excadrill-mega"
+   ],
+   "players": 154,
+   "share": 0.0385,
+   "winRate": 0.4888,
+   "topCutRate": 0.0649,
+   "score": 54.7,
+   "list": [
+    {
+     "count": 4,
+     "name": "Beldum",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "113",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Metang",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Metagross",
+     "category": "Pokemon",
+     "set": "CRI",
+     "number": "61",
+     "inclusion": 0.98
+    },
+    {
+     "count": 2,
+     "name": "Drilbur",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "46",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Mega Excadrill ex",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "65",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Genesect ex",
+     "category": "Pokemon",
+     "set": "BLK",
+     "number": "67",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.38
+    },
+    {
+     "count": 1,
+     "name": "Mew ex",
+     "category": "Pokemon",
+     "set": "30C",
+     "number": "66",
+     "inclusion": 0.02
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.71
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 0.71
+    },
+    {
+     "count": 2,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 0.82
+    },
+    {
+     "count": 1,
+     "name": "Xerosic's Machinations",
+     "category": "Trainer",
+     "set": "SFA",
+     "number": "64",
+     "inclusion": 0.09
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Transceiver",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "178",
+     "inclusion": 0.35
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.66
+    },
+    {
+     "count": 1,
+     "name": "Energy Recycler",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "164",
+     "inclusion": 0.88
+    },
+    {
+     "count": 1,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.17
+    },
+    {
+     "count": 1,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.7
+    },
+    {
+     "count": 1,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.77
+    },
+    {
+     "count": 1,
+     "name": "Precious Trolley",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "185",
+     "inclusion": 0.45
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Watchtower",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "180",
+     "inclusion": 0.1
+    },
+    {
+     "count": 1,
+     "name": "Gravity Mountain",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "177",
+     "inclusion": 0.42
+    },
+    {
+     "count": 15,
+     "name": "Metal Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "16",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "cynthia-garchomp-ex",
+   "name": "Cynthia's Garchomp",
+   "icons": [
+    "garchomp"
+   ],
+   "players": 67,
+   "share": 0.0167,
+   "winRate": 0.5149,
+   "topCutRate": 0.1045,
+   "score": 53.6,
+   "list": [
+    {
+     "count": 4,
+     "name": "Cynthia's Gible",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "102",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Cynthia's Gabite",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "103",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Cynthia's Garchomp ex",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "104",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Cynthia's Roselia",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "7",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Cynthia's Roserade",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "8",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Cynthia's Spiritomb",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "129",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 0.84
+    },
+    {
+     "count": 1,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 0.36
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Fighting Gong",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "116",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Premium Power Pro",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "124",
+     "inclusion": 0.9
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.57
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.48
+    },
+    {
+     "count": 1,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.88
+    },
+    {
+     "count": 1,
+     "name": "Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "130",
+     "inclusion": 0.64
+    },
+    {
+     "count": 1,
+     "name": "Unfair Stamp",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "165",
+     "inclusion": 0.16
+    },
+    {
+     "count": 3,
+     "name": "Cynthia's Power Weight",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "162",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Forest of Vitality",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "117",
+     "inclusion": 0.22
+    },
+    {
+     "count": 4,
+     "name": "Fighting Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "14",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Rocky Fighting Energy",
+     "category": "Energy",
+     "set": "POR",
+     "number": "87",
+     "inclusion": 0.99
     }
    ]
   },
@@ -4554,11 +2844,11 @@
    "icons": [
     "chandelure-mega"
    ],
-   "players": 30,
-   "share": 0.0076,
-   "winRate": 0.5072,
-   "topCutRate": 0.1,
-   "score": 38.9,
+   "players": 24,
+   "share": 0.006,
+   "winRate": 0.5636,
+   "topCutRate": 0.125,
+   "score": 53.6,
    "list": [
     {
      "count": 4,
@@ -4578,14 +2868,6 @@
     },
     {
      "count": 4,
-     "name": "Chandelure",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "38",
-     "inclusion": 0.83
-    },
-    {
-     "count": 3,
      "name": "Mega Chandelure ex",
      "category": "Pokemon",
      "set": "PBL",
@@ -4593,12 +2875,36 @@
      "inclusion": 1
     },
     {
+     "count": 4,
+     "name": "Chandelure",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "38",
+     "inclusion": 0.92
+    },
+    {
+     "count": 1,
+     "name": "Shuppet",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "33",
+     "inclusion": 0.08
+    },
+    {
+     "count": 1,
+     "name": "Banette",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "34",
+     "inclusion": 0.08
+    },
+    {
      "count": 1,
      "name": "Lillie's Clefairy ex",
      "category": "Pokemon",
      "set": "JTG",
      "number": "56",
-     "inclusion": 0.47
+     "inclusion": 0.46
     },
     {
      "count": 1,
@@ -4606,7 +2912,23 @@
      "category": "Pokemon",
      "set": "SCR",
      "number": "63",
-     "inclusion": 0.67
+     "inclusion": 0.75
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.17
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.63
     },
     {
      "count": 1,
@@ -4614,7 +2936,7 @@
      "category": "Pokemon",
      "set": "BLK",
      "number": "40",
-     "inclusion": 0.8
+     "inclusion": 0.88
     },
     {
      "count": 4,
@@ -4630,7 +2952,7 @@
      "category": "Trainer",
      "set": "WHT",
      "number": "84",
-     "inclusion": 0.8
+     "inclusion": 0.88
     },
     {
      "count": 3,
@@ -4641,12 +2963,12 @@
      "inclusion": 1
     },
     {
-     "count": 2,
-     "name": "Xerosic's Machinations",
+     "count": 1,
+     "name": "Dawn",
      "category": "Trainer",
-     "set": "SFA",
-     "number": "64",
-     "inclusion": 0.73
+     "set": "PFL",
+     "number": "87",
+     "inclusion": 0.25
     },
     {
      "count": 1,
@@ -4654,7 +2976,7 @@
      "category": "Trainer",
      "set": "TWM",
      "number": "155",
-     "inclusion": 0.77
+     "inclusion": 0.83
     },
     {
      "count": 1,
@@ -4662,31 +2984,7 @@
      "category": "Trainer",
      "set": "SSP",
      "number": "187",
-     "inclusion": 0.23
-    },
-    {
-     "count": 3,
-     "name": "Rare Candy",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "125",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.77
-    },
-    {
-     "count": 3,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 0.73
+     "inclusion": 0.33
     },
     {
      "count": 3,
@@ -4694,10 +2992,34 @@
      "category": "Trainer",
      "set": "MEG",
      "number": "131",
-     "inclusion": 0.8
+     "inclusion": 0.79
     },
     {
-     "count": 3,
+     "count": 2,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "125",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.83
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.79
+    },
+    {
+     "count": 2,
      "name": "Poké Pad",
      "category": "Trainer",
      "set": "POR",
@@ -4705,20 +3027,20 @@
      "inclusion": 1
     },
     {
+     "count": 1,
+     "name": "Tool Scrapper",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "212",
+     "inclusion": 0.13
+    },
+    {
      "count": 2,
      "name": "Air Balloon",
      "category": "Trainer",
      "set": "ASC",
      "number": "181",
-     "inclusion": 0.87
-    },
-    {
-     "count": 1,
-     "name": "Mystery Garden",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "122",
-     "inclusion": 0.33
+     "inclusion": 0.96
     },
     {
      "count": 4,
@@ -4742,7 +3064,7 @@
      "category": "Energy",
      "set": "MEE",
      "number": "10",
-     "inclusion": 0.8
+     "inclusion": 0.88
     },
     {
      "count": 1,
@@ -4750,7 +3072,1207 @@
      "category": "Energy",
      "set": "TEF",
      "number": "162",
-     "inclusion": 0.33
+     "inclusion": 0.38
+    }
+   ]
+  },
+  {
+   "id": "rockets-honchkrow",
+   "name": "Rocket's Honchkrow",
+   "icons": [
+    "honchkrow",
+    "porygon2"
+   ],
+   "players": 54,
+   "share": 0.0135,
+   "winRate": 0.5246,
+   "topCutRate": 0.0926,
+   "score": 52.6,
+   "list": [
+    {
+     "count": 4,
+     "name": "Team Rocket's Murkrow",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "127",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Team Rocket's Honchkrow",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "127",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Porygon",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "153",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Team Rocket's Porygon2",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "154",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Articuno",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "51",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Giovanni",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "174",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Archer",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "170",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Ariana",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "171",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Proton",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "177",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Transceiver",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "178",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Roto-Stick",
+     "category": "Trainer",
+     "set": "PRE",
+     "number": "127",
+     "inclusion": 0.98
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.98
+    },
+    {
+     "count": 1,
+     "name": "Miracle Headset",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "183",
+     "inclusion": 0.96
+    },
+    {
+     "count": 2,
+     "name": "Lucky Helmet",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "158",
+     "inclusion": 0.37
+    },
+    {
+     "count": 3,
+     "name": "Team Rocket's Factory",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "173",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Energy",
+     "category": "Energy",
+     "set": "DRI",
+     "number": "182",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ignition Energy",
+     "category": "Energy",
+     "set": "WHT",
+     "number": "86",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "sharpedo-toxtricity",
+   "name": "Sharpedo Toxtricity",
+   "icons": [
+    "sharpedo-mega",
+    "toxtricity"
+   ],
+   "players": 124,
+   "share": 0.031,
+   "winRate": 0.4802,
+   "topCutRate": 0.0968,
+   "score": 52.5,
+   "list": [
+    {
+     "count": 3,
+     "name": "Carvanha",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "60",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Mega Sharpedo ex",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "61",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Toxel",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "67",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Toxtricity",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "68",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "95",
+     "inclusion": 0.98
+    },
+    {
+     "count": 2,
+     "name": "Pecharunt ex",
+     "category": "Pokemon",
+     "set": "SFA",
+     "number": "39",
+     "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Tatsugiri",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "131",
+     "inclusion": 0.9
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.92
+    },
+    {
+     "count": 1,
+     "name": "Chi-Yu",
+     "category": "Pokemon",
+     "set": "PBL",
+     "number": "59",
+     "inclusion": 0.28
+    },
+    {
+     "count": 1,
+     "name": "Yveltal",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "88",
+     "inclusion": 0.69
+    },
+    {
+     "count": 4,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Judge",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "76",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 0.9
+    },
+    {
+     "count": 1,
+     "name": "Cyrano",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "170",
+     "inclusion": 0.09
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.98
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.94
+    },
+    {
+     "count": 1,
+     "name": "Unfair Stamp",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "165",
+     "inclusion": 0.69
+    },
+    {
+     "count": 3,
+     "name": "Binding Mochi",
+     "category": "Trainer",
+     "set": "PRE",
+     "number": "95",
+     "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Watchtower",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "180",
+     "inclusion": 0.87
+    },
+    {
+     "count": 9,
+     "name": "Darkness Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "15",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "dragapult-dusknoir",
+   "name": "Dragapult Dusknoir",
+   "icons": [
+    "dragapult",
+    "dusknoir"
+   ],
+   "players": 196,
+   "share": 0.049,
+   "winRate": 0.4515,
+   "topCutRate": 0.0663,
+   "score": 50,
+   "list": [
+    {
+     "count": 4,
+     "name": "Dreepy",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "128",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Drakloak",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "129",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dragapult ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "130",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Duskull",
+     "category": "Pokemon",
+     "set": "PRE",
+     "number": "35",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Dusclops",
+     "category": "Pokemon",
+     "set": "PRE",
+     "number": "36",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Dusknoir",
+     "category": "Pokemon",
+     "set": "PRE",
+     "number": "37",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Budew",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "16",
+     "inclusion": 0.92
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.85
+    },
+    {
+     "count": 1,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "95",
+     "inclusion": 0.59
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.97
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 0.97
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Crispin",
+     "category": "Trainer",
+     "set": "SCR",
+     "number": "133",
+     "inclusion": 0.88
+    },
+    {
+     "count": 1,
+     "name": "Rosa's Encouragement",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "84",
+     "inclusion": 0.71
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.97
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.91
+    },
+    {
+     "count": 3,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "125",
+     "inclusion": 0.49
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.99
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.83
+    },
+    {
+     "count": 1,
+     "name": "Unfair Stamp",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "165",
+     "inclusion": 0.76
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Watchtower",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "180",
+     "inclusion": 0.65
+    },
+    {
+     "count": 3,
+     "name": "Psychic Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "13",
+     "inclusion": 0.9
+    },
+    {
+     "count": 3,
+     "name": "Fire Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "10",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Darkness Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "15",
+     "inclusion": 0.58
+    }
+   ]
+  },
+  {
+   "id": "mega-starmie-ex",
+   "name": "Mega Starmie",
+   "icons": [
+    "starmie-mega"
+   ],
+   "players": 34,
+   "share": 0.0085,
+   "winRate": 0.5389,
+   "topCutRate": 0.0588,
+   "score": 48.9,
+   "list": [
+    {
+     "count": 3,
+     "name": "Staryu",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "20",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Mega Starmie ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "21",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Snorunt",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "46",
+     "inclusion": 0.94
+    },
+    {
+     "count": 2,
+     "name": "Mega Froslass ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "47",
+     "inclusion": 0.94
+    },
+    {
+     "count": 2,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.71
+    },
+    {
+     "count": 1,
+     "name": "Buneary",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "83",
+     "inclusion": 0.15
+    },
+    {
+     "count": 1,
+     "name": "Mega Lopunny ex",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "84",
+     "inclusion": 0.15
+    },
+    {
+     "count": 1,
+     "name": "Latias ex",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "76",
+     "inclusion": 0.26
+    },
+    {
+     "count": 4,
+     "name": "Salvatore",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "160",
+     "inclusion": 0.82
+    },
+    {
+     "count": 4,
+     "name": "Wally's Compassion",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "132",
+     "inclusion": 0.94
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 0.97
+    },
+    {
+     "count": 3,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 0.97
+    },
+    {
+     "count": 2,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 0.94
+    },
+    {
+     "count": 1,
+     "name": "Xerosic's Machinations",
+     "category": "Trainer",
+     "set": "SFA",
+     "number": "64",
+     "inclusion": 0.59
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 0.97
+    },
+    {
+     "count": 2,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.74
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.71
+    },
+    {
+     "count": 2,
+     "name": "Roto-Stick",
+     "category": "Trainer",
+     "set": "PRE",
+     "number": "127",
+     "inclusion": 0.09
+    },
+    {
+     "count": 2,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.68
+    },
+    {
+     "count": 2,
+     "name": "Battle Cage",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "85",
+     "inclusion": 0.56
+    },
+    {
+     "count": 8,
+     "name": "Water Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "11",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Ignition Energy",
+     "category": "Energy",
+     "set": "WHT",
+     "number": "86",
+     "inclusion": 0.91
+    },
+    {
+     "count": 2,
+     "name": "Bubbly Water Energy",
+     "category": "Energy",
+     "set": "CRI",
+     "number": "84",
+     "inclusion": 0.62
+    },
+    {
+     "count": 1,
+     "name": "Legacy Energy",
+     "category": "Energy",
+     "set": "TWM",
+     "number": "167",
+     "inclusion": 0.47
+    }
+   ]
+  },
+  {
+   "id": "lopunny-dudunsparce",
+   "name": "Lopunny Dudunsparce",
+   "icons": [
+    "lopunny-mega",
+    "dudunsparce"
+   ],
+   "players": 163,
+   "share": 0.0407,
+   "winRate": 0.4505,
+   "topCutRate": 0.0798,
+   "score": 48.3,
+   "list": [
+    {
+     "count": 3,
+     "name": "Dunsparce",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "120",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Dunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "128",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dudunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "129",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Dudunsparce ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "121",
+     "inclusion": 0.32
+    },
+    {
+     "count": 3,
+     "name": "Snorunt",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "46",
+     "inclusion": 0.14
+    },
+    {
+     "count": 2,
+     "name": "Mega Froslass ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "47",
+     "inclusion": 0.14
+    },
+    {
+     "count": 2,
+     "name": "Buneary",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "83",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Mega Lopunny ex",
+     "category": "Pokemon",
+     "set": "PFL",
+     "number": "84",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Fan Rotom",
+     "category": "Pokemon",
+     "set": "SCR",
+     "number": "118",
+     "inclusion": 0.94
+    },
+    {
+     "count": 1,
+     "name": "Psyduck",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "39",
+     "inclusion": 0.8
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Wally's Compassion",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "132",
+     "inclusion": 0.98
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.99
+    },
+    {
+     "count": 3,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.44
+    },
+    {
+     "count": 2,
+     "name": "Air Balloon",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "181",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "Hero's Cape",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "152",
+     "inclusion": 0.1
+    },
+    {
+     "count": 3,
+     "name": "Battle Cage",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "85",
+     "inclusion": 0.93
+    },
+    {
+     "count": 4,
+     "name": "Mist Energy",
+     "category": "Energy",
+     "set": "TEF",
+     "number": "161",
+     "inclusion": 0.99
+    },
+    {
+     "count": 3,
+     "name": "Bubbly Water Energy",
+     "category": "Energy",
+     "set": "CRI",
+     "number": "84",
+     "inclusion": 0.03
+    }
+   ]
+  },
+  {
+   "id": "crustle-dri",
+   "name": "Crustle",
+   "icons": [
+    "crustle"
+   ],
+   "players": 74,
+   "share": 0.0185,
+   "winRate": 0.4797,
+   "topCutRate": 0.0811,
+   "score": 46.4,
+   "list": [
+    {
+     "count": 4,
+     "name": "Mega Kangaskhan ex",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "104",
+     "inclusion": 0.86
+    },
+    {
+     "count": 3,
+     "name": "Dwebble",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "11",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Crustle",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "12",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 0.99
+    },
+    {
+     "count": 4,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 0.96
+    },
+    {
+     "count": 3,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 0.89
+    },
+    {
+     "count": 2,
+     "name": "Eri",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "146",
+     "inclusion": 0.85
+    },
+    {
+     "count": 1,
+     "name": "Xerosic's Machinations",
+     "category": "Trainer",
+     "set": "SFA",
+     "number": "64",
+     "inclusion": 0.93
+    },
+    {
+     "count": 1,
+     "name": "Pokémon Center Lady",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "123",
+     "inclusion": 0.78
+    },
+    {
+     "count": 1,
+     "name": "Bianca's Devotion",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "142",
+     "inclusion": 0.46
+    },
+    {
+     "count": 4,
+     "name": "Jumbo Ice Cream",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "91",
+     "inclusion": 0.95
+    },
+    {
+     "count": 3,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.95
+    },
+    {
+     "count": 2,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 0.93
+    },
+    {
+     "count": 1,
+     "name": "Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "130",
+     "inclusion": 0.92
+    },
+    {
+     "count": 1,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.18
+    },
+    {
+     "count": 1,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.8
+    },
+    {
+     "count": 1,
+     "name": "Hero's Cape",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "152",
+     "inclusion": 0.95
+    },
+    {
+     "count": 1,
+     "name": "Handheld Fan",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "150",
+     "inclusion": 0.64
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Factory",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "173",
+     "inclusion": 0.73
+    },
+    {
+     "count": 1,
+     "name": "Lumiose City",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "77",
+     "inclusion": 0.74
+    },
+    {
+     "count": 4,
+     "name": "Mist Energy",
+     "category": "Energy",
+     "set": "TEF",
+     "number": "161",
+     "inclusion": 0.95
+    },
+    {
+     "count": 4,
+     "name": "Spiky Energy",
+     "category": "Energy",
+     "set": "JTG",
+     "number": "159",
+     "inclusion": 0.88
+    },
+    {
+     "count": 4,
+     "name": "Growing Grass Energy",
+     "category": "Energy",
+     "set": "POR",
+     "number": "86",
+     "inclusion": 0.95
+    },
+    {
+     "count": 1,
+     "name": "Grass Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "9",
+     "inclusion": 0.73
     }
    ]
   },
@@ -4761,11 +4283,11 @@
     "archaludon",
     "zoroark"
    ],
-   "players": 8,
-   "share": 0.002,
-   "winRate": 0.5469,
-   "topCutRate": 0.125,
-   "score": 36.9,
+   "players": 9,
+   "share": 0.0022,
+   "winRate": 0.5698,
+   "topCutRate": 0.1111,
+   "score": 45.7,
    "list": [
     {
      "count": 4,
@@ -4821,7 +4343,7 @@
      "category": "Pokemon",
      "set": "POR",
      "number": "62",
-     "inclusion": 0.88
+     "inclusion": 0.89
     },
     {
      "count": 4,
@@ -4829,7 +4351,7 @@
      "category": "Trainer",
      "set": "TEF",
      "number": "155",
-     "inclusion": 0.38
+     "inclusion": 0.56
     },
     {
      "count": 4,
@@ -4877,7 +4399,7 @@
      "category": "Trainer",
      "set": "SVI",
      "number": "186",
-     "inclusion": 0.38
+     "inclusion": 0.56
     },
     {
      "count": 2,
@@ -4901,7 +4423,7 @@
      "category": "Trainer",
      "set": "ASC",
      "number": "181",
-     "inclusion": 0.38
+     "inclusion": 0.56
     },
     {
      "count": 1,
@@ -4909,7 +4431,7 @@
      "category": "Trainer",
      "set": "TEF",
      "number": "152",
-     "inclusion": 0.25
+     "inclusion": 0.44
     },
     {
      "count": 2,
@@ -4917,7 +4439,7 @@
      "category": "Trainer",
      "set": "PFL",
      "number": "85",
-     "inclusion": 0.38
+     "inclusion": 0.56
     },
     {
      "count": 10,
@@ -4930,28 +4452,20 @@
    ]
   },
   {
-   "id": "mega-absol-box",
-   "name": "Mega Absol Box",
+   "id": "grimmsnarl-froslass",
+   "name": "Grimmsnarl Froslass",
    "icons": [
-    "absol-mega",
-    "kangaskhan-mega"
+    "grimmsnarl",
+    "froslass"
    ],
-   "players": 23,
-   "share": 0.0058,
-   "winRate": 0.4948,
-   "topCutRate": 0.087,
-   "score": 34.9,
+   "players": 67,
+   "share": 0.0167,
+   "winRate": 0.4881,
+   "topCutRate": 0.0448,
+   "score": 44.8,
    "list": [
     {
-     "count": 3,
-     "name": "Mega Kangaskhan ex",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "104",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
+     "count": 4,
      "name": "Munkidori",
      "category": "Pokemon",
      "set": "TWM",
@@ -4959,55 +4473,87 @@
      "inclusion": 1
     },
     {
-     "count": 2,
-     "name": "Mega Absol ex",
+     "count": 3,
+     "name": "Marnie's Impidimp",
      "category": "Pokemon",
-     "set": "MEG",
-     "number": "86",
+     "set": "DRI",
+     "number": "134",
      "inclusion": 1
     },
     {
      "count": 2,
+     "name": "Marnie's Morgrem",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "135",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Marnie's Grimmsnarl ex",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "136",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Snorunt",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "46",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Froslass",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "53",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Budew",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "16",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
      "name": "Yveltal",
      "category": "Pokemon",
      "set": "MEG",
      "number": "88",
-     "inclusion": 0.87
+     "inclusion": 0.85
     },
     {
      "count": 1,
-     "name": "Bloodmoon Ursaluna ex",
+     "name": "Shaymin",
      "category": "Pokemon",
-     "set": "TWM",
-     "number": "141",
-     "inclusion": 0.17
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.82
     },
     {
      "count": 1,
-     "name": "Latias ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "76",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Pecharunt ex",
-     "category": "Pokemon",
-     "set": "SFA",
-     "number": "39",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
+     "name": "Psyduck",
      "category": "Pokemon",
      "set": "ASC",
-     "number": "142",
-     "inclusion": 0.96
+     "number": "39",
+     "inclusion": 0.36
     },
     {
      "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
      "name": "Boss's Orders",
      "category": "Trainer",
      "set": "MEG",
@@ -5015,60 +4561,28 @@
      "inclusion": 1
     },
     {
-     "count": 4,
-     "name": "Janine's Secret Art",
-     "category": "Trainer",
-     "set": "PRE",
-     "number": "112",
-     "inclusion": 0.78
-    },
-    {
-     "count": 3,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.83
-    },
-    {
      "count": 2,
      "name": "Team Rocket's Petrel",
      "category": "Trainer",
      "set": "DRI",
      "number": "176",
-     "inclusion": 0.57
+     "inclusion": 0.96
+    },
+    {
+     "count": 2,
+     "name": "Gwynn",
+     "category": "Trainer",
+     "set": "PBL",
+     "number": "78",
+     "inclusion": 0.82
     },
     {
      "count": 4,
-     "name": "Energy Switch",
+     "name": "Poké Pad",
      "category": "Trainer",
-     "set": "MEG",
-     "number": "115",
+     "set": "POR",
+     "number": "81",
      "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Pokégear 3.0",
-     "category": "Trainer",
-     "set": "SVI",
-     "number": "186",
-     "inclusion": 0.57
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Mega Signal",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "121",
-     "inclusion": 0.57
     },
     {
      "count": 2,
@@ -5076,15 +4590,31 @@
      "category": "Trainer",
      "set": "ASC",
      "number": "196",
+     "inclusion": 0.99
+    },
+    {
+     "count": 2,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Rare Candy",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "125",
      "inclusion": 1
     },
     {
      "count": 1,
-     "name": "Poké Pad",
+     "name": "Secret Box",
      "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.39
+     "set": "TWM",
+     "number": "163",
+     "inclusion": 0.91
     },
     {
      "count": 1,
@@ -5092,86 +4622,110 @@
      "category": "Trainer",
      "set": "CRI",
      "number": "82",
-     "inclusion": 1
+     "inclusion": 0.96
     },
     {
      "count": 1,
-     "name": "Hero's Cape",
+     "name": "Switch",
      "category": "Trainer",
-     "set": "TEF",
-     "number": "152",
-     "inclusion": 0.65
+     "set": "MEG",
+     "number": "130",
+     "inclusion": 0.06
+    },
+    {
+     "count": 1,
+     "name": "Energy Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "115",
+     "inclusion": 0.69
+    },
+    {
+     "count": 1,
+     "name": "Air Balloon",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "181",
+     "inclusion": 1
     },
     {
      "count": 3,
-     "name": "Lumiose City",
+     "name": "Spikemuth Gym",
      "category": "Trainer",
-     "set": "POR",
-     "number": "77",
-     "inclusion": 0.78
+     "set": "DRI",
+     "number": "169",
+     "inclusion": 1
     },
     {
-     "count": 8,
+     "count": 9,
      "name": "Darkness Energy",
      "category": "Energy",
      "set": "MEE",
      "number": "15",
      "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Mist Energy",
-     "category": "Energy",
-     "set": "TEF",
-     "number": "161",
-     "inclusion": 0.83
     }
    ]
   },
   {
-   "id": "starmie-dusknoir",
-   "name": "Starmie Dusknoir",
+   "id": "starmie-froslass",
+   "name": "Starmie Froslass",
    "icons": [
     "starmie-mega",
-    "dusknoir"
+    "froslass"
    ],
-   "players": 16,
-   "share": 0.004,
-   "winRate": 0.4881,
-   "topCutRate": 0.125,
-   "score": 34.3,
+   "players": 28,
+   "share": 0.007,
+   "winRate": 0.5255,
+   "topCutRate": 0.0357,
+   "score": 44,
    "list": [
     {
-     "count": 4,
-     "name": "Duskull",
-     "category": "Pokemon",
-     "set": "PRE",
-     "number": "35",
-     "inclusion": 1
-    },
-    {
      "count": 3,
-     "name": "Dusclops",
+     "name": "Snorunt",
      "category": "Pokemon",
-     "set": "PRE",
-     "number": "36",
+     "set": "ASC",
+     "number": "46",
      "inclusion": 1
     },
     {
      "count": 2,
-     "name": "Dusknoir",
+     "name": "Froslass",
      "category": "Pokemon",
-     "set": "PRE",
-     "number": "37",
+     "set": "TWM",
+     "number": "53",
      "inclusion": 1
     },
     {
-     "count": 4,
-     "name": "Meowth ex",
+     "count": 1,
+     "name": "Mega Froslass ex",
      "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 0.94
+     "set": "ASC",
+     "number": "47",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "128",
+     "inclusion": 0.43
+    },
+    {
+     "count": 2,
+     "name": "Dudunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "129",
+     "inclusion": 0.43
+    },
+    {
+     "count": 1,
+     "name": "Dudunsparce ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "121",
+     "inclusion": 0.32
     },
     {
      "count": 3,
@@ -5190,68 +4744,44 @@
      "inclusion": 1
     },
     {
-     "count": 2,
+     "count": 3,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "95",
+     "inclusion": 0.89
+    },
+    {
+     "count": 1,
      "name": "Budew",
      "category": "Pokemon",
      "set": "ASC",
      "number": "16",
-     "inclusion": 0.94
-    },
-    {
-     "count": 2,
-     "name": "Latias ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "76",
-     "inclusion": 0.25
+     "inclusion": 0.89
     },
     {
      "count": 1,
-     "name": "Snorunt",
+     "name": "Meowth ex",
      "category": "Pokemon",
-     "set": "ASC",
-     "number": "46",
-     "inclusion": 0.69
-    },
-    {
-     "count": 1,
-     "name": "Mega Froslass ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "47",
-     "inclusion": 0.69
-    },
-    {
-     "count": 1,
-     "name": "Fezandipiti ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "142",
-     "inclusion": 0.81
-    },
-    {
-     "count": 1,
-     "name": "Shaymin",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "10",
-     "inclusion": 0.06
+     "set": "POR",
+     "number": "62",
+     "inclusion": 1
     },
     {
      "count": 4,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
      "name": "Lillie's Determination",
      "category": "Trainer",
      "set": "MEG",
      "number": "119",
      "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 0.94
     },
     {
      "count": 2,
@@ -5262,20 +4792,20 @@
      "inclusion": 1
     },
     {
-     "count": 1,
+     "count": 2,
      "name": "Wally's Compassion",
      "category": "Trainer",
      "set": "MEG",
      "number": "132",
-     "inclusion": 0.25
+     "inclusion": 0.71
     },
     {
      "count": 1,
-     "name": "Carmine",
+     "name": "Crispin",
      "category": "Trainer",
-     "set": "TWM",
-     "number": "145",
-     "inclusion": 0.06
+     "set": "SCR",
+     "number": "133",
+     "inclusion": 0.75
     },
     {
      "count": 4,
@@ -5283,6 +4813,14 @@
      "category": "Trainer",
      "set": "POR",
      "number": "81",
+     "inclusion": 0.89
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
      "inclusion": 1
     },
     {
@@ -5294,7 +4832,7 @@
      "inclusion": 1
     },
     {
-     "count": 3,
+     "count": 2,
      "name": "Night Stretcher",
      "category": "Trainer",
      "set": "ASC",
@@ -5303,258 +4841,51 @@
     },
     {
      "count": 3,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 0.94
-    },
-    {
-     "count": 1,
-     "name": "Scoop Up Cyclone",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "162",
-     "inclusion": 0.06
-    },
-    {
-     "count": 1,
-     "name": "Switch",
+     "name": "Risky Ruins",
      "category": "Trainer",
      "set": "MEG",
-     "number": "130",
-     "inclusion": 0.31
+     "number": "127",
+     "inclusion": 0.75
     },
     {
      "count": 3,
-     "name": "Ignition Energy",
+     "name": "Darkness Energy",
      "category": "Energy",
-     "set": "WHT",
-     "number": "86",
-     "inclusion": 1
+     "set": "MEE",
+     "number": "15",
+     "inclusion": 0.89
     },
     {
-     "count": 2,
-     "name": "Bubbly Water Energy",
-     "category": "Energy",
-     "set": "CRI",
-     "number": "84",
-     "inclusion": 0.19
-    },
-    {
-     "count": 2,
+     "count": 3,
      "name": "Water Energy",
      "category": "Energy",
      "set": "MEE",
      "number": "11",
      "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "rocket-mewtwo-ex",
-   "name": "Rocket's Mewtwo",
-   "icons": [
-    "mewtwo",
-    "spidops"
-   ],
-   "players": 18,
-   "share": 0.0045,
-   "winRate": 0.506,
-   "topCutRate": 0.0556,
-   "score": 33.7,
-   "list": [
-    {
-     "count": 4,
-     "name": "Team Rocket's Tarountula",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "19",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Spidops",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "20",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Mewtwo ex",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Articuno",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "51",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Mimikyu",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "87",
-     "inclusion": 1
     },
     {
      "count": 1,
-     "name": "Team Rocket's Sneasel",
-     "category": "Pokemon",
-     "set": "DRI",
-     "number": "128",
-     "inclusion": 0.56
-    },
-    {
-     "count": 1,
-     "name": "Lillie's Clefairy ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "56",
-     "inclusion": 0.83
-    },
-    {
-     "count": 3,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 0.67
-    },
-    {
-     "count": 3,
-     "name": "Team Rocket's Ariana",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "171",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Team Rocket's Giovanni",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "174",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Team Rocket's Proton",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "177",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Team Rocket's Archer",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "170",
-     "inclusion": 0.83
-    },
-    {
-     "count": 1,
-     "name": "Team Rocket's Petrel",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "176",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Transceiver",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "178",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Energy Switch",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "115",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Secret Box",
-     "category": "Trainer",
+     "name": "Legacy Energy",
+     "category": "Energy",
      "set": "TWM",
-     "number": "163",
-     "inclusion": 0.39
+     "number": "167",
+     "inclusion": 0.64
     },
     {
      "count": 1,
-     "name": "Bug Catching Set",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "143",
-     "inclusion": 0.72
+     "name": "Bubbly Water Energy",
+     "category": "Energy",
+     "set": "CRI",
+     "number": "84",
+     "inclusion": 0.64
     },
     {
-     "count": 2,
-     "name": "Brave Bangle",
-     "category": "Trainer",
+     "count": 1,
+     "name": "Ignition Energy",
+     "category": "Energy",
      "set": "WHT",
-     "number": "80",
-     "inclusion": 0.67
-    },
-    {
-     "count": 3,
-     "name": "Team Rocket's Factory",
-     "category": "Trainer",
-     "set": "DRI",
-     "number": "173",
-     "inclusion": 1
-    },
-    {
-     "count": 6,
-     "name": "Grass Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "9",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Team Rocket's Energy",
-     "category": "Energy",
-     "set": "DRI",
-     "number": "182",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Psychic Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "13",
-     "inclusion": 1
+     "number": "86",
+     "inclusion": 0.86
     }
    ]
   },
@@ -5565,11 +4896,11 @@
     "alakazam",
     "dusknoir"
    ],
-   "players": 197,
-   "share": 0.0497,
-   "winRate": 0.4208,
-   "topCutRate": 0.0457,
-   "score": 33.6,
+   "players": 176,
+   "share": 0.044,
+   "winRate": 0.4353,
+   "topCutRate": 0.0455,
+   "score": 43.8,
    "list": [
     {
      "count": 4,
@@ -5633,7 +4964,7 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "16",
-     "inclusion": 0.95
+     "inclusion": 0.94
     },
     {
      "count": 1,
@@ -5697,7 +5028,7 @@
      "category": "Trainer",
      "set": "TEF",
      "number": "144",
-     "inclusion": 0.94
+     "inclusion": 0.91
     },
     {
      "count": 3,
@@ -5713,7 +5044,7 @@
      "category": "Trainer",
      "set": "TWM",
      "number": "148",
-     "inclusion": 0.26
+     "inclusion": 0.24
     },
     {
      "count": 2,
@@ -5729,7 +5060,7 @@
      "category": "Trainer",
      "set": "CRI",
      "number": "82",
-     "inclusion": 1
+     "inclusion": 0.99
     },
     {
      "count": 2,
@@ -5737,7 +5068,7 @@
      "category": "Trainer",
      "set": "MEG",
      "number": "128",
-     "inclusion": 0.96
+     "inclusion": 0.95
     },
     {
      "count": 1,
@@ -5774,389 +5105,16 @@
    ]
   },
   {
-   "id": "ceruledge-ex",
-   "name": "Ceruledge",
-   "icons": [
-    "ceruledge"
-   ],
-   "players": 25,
-   "share": 0.0063,
-   "winRate": 0.4862,
-   "topCutRate": 0.04,
-   "score": 31.7,
-   "list": [
-    {
-     "count": 4,
-     "name": "Charcadet",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "32",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Ceruledge ex",
-     "category": "Pokemon",
-     "set": "SSP",
-     "number": "36",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Armarouge",
-     "category": "Pokemon",
-     "set": "PBL",
-     "number": "12",
-     "inclusion": 0.24
-    },
-    {
-     "count": 2,
-     "name": "Lunatone",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "74",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Solrock",
-     "category": "Pokemon",
-     "set": "MEG",
-     "number": "75",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Drilbur",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "85",
-     "inclusion": 0.96
-    },
-    {
-     "count": 4,
-     "name": "Explorer's Guidance",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "147",
-     "inclusion": 0.76
-    },
-    {
-     "count": 4,
-     "name": "Carmine",
-     "category": "Trainer",
-     "set": "TWM",
-     "number": "145",
-     "inclusion": 0.92
-    },
-    {
-     "count": 1,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Fighting Gong",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "116",
-     "inclusion": 0.96
-    },
-    {
-     "count": 4,
-     "name": "Pokémon Catcher",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "82",
-     "inclusion": 0.4
-    },
-    {
-     "count": 3,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Brilliant Blender",
-     "category": "Trainer",
-     "set": "SSP",
-     "number": "164",
-     "inclusion": 0.92
-    },
-    {
-     "count": 13,
-     "name": "Fighting Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "14",
-     "inclusion": 1
-    },
-    {
-     "count": 6,
-     "name": "Fire Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "10",
-     "inclusion": 1
-    }
-   ]
-  },
-  {
-   "id": "starmie-froslass",
-   "name": "Starmie Froslass",
-   "icons": [
-    "starmie-mega",
-    "froslass"
-   ],
-   "players": 36,
-   "share": 0.0091,
-   "winRate": 0.4792,
-   "topCutRate": 0.0278,
-   "score": 31.7,
-   "list": [
-    {
-     "count": 3,
-     "name": "Snorunt",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "46",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Froslass",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "53",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Mega Froslass ex",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "47",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Dunsparce",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "128",
-     "inclusion": 0.42
-    },
-    {
-     "count": 2,
-     "name": "Dudunsparce",
-     "category": "Pokemon",
-     "set": "TEF",
-     "number": "129",
-     "inclusion": 0.42
-    },
-    {
-     "count": 1,
-     "name": "Dudunsparce ex",
-     "category": "Pokemon",
-     "set": "JTG",
-     "number": "121",
-     "inclusion": 0.25
-    },
-    {
-     "count": 3,
-     "name": "Staryu",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "20",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Mega Starmie ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "21",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Munkidori",
-     "category": "Pokemon",
-     "set": "TWM",
-     "number": "95",
-     "inclusion": 0.94
-    },
-    {
-     "count": 1,
-     "name": "Budew",
-     "category": "Pokemon",
-     "set": "ASC",
-     "number": "16",
-     "inclusion": 0.89
-    },
-    {
-     "count": 1,
-     "name": "Meowth ex",
-     "category": "Pokemon",
-     "set": "POR",
-     "number": "62",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Hilda",
-     "category": "Trainer",
-     "set": "WHT",
-     "number": "84",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Lillie's Determination",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "119",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Boss's Orders",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "114",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Wally's Compassion",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "132",
-     "inclusion": 0.78
-    },
-    {
-     "count": 1,
-     "name": "Crispin",
-     "category": "Trainer",
-     "set": "SCR",
-     "number": "133",
-     "inclusion": 0.78
-    },
-    {
-     "count": 4,
-     "name": "Poké Pad",
-     "category": "Trainer",
-     "set": "POR",
-     "number": "81",
-     "inclusion": 0.94
-    },
-    {
-     "count": 4,
-     "name": "Buddy-Buddy Poffin",
-     "category": "Trainer",
-     "set": "TEF",
-     "number": "144",
-     "inclusion": 1
-    },
-    {
-     "count": 4,
-     "name": "Ultra Ball",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "131",
-     "inclusion": 1
-    },
-    {
-     "count": 2,
-     "name": "Night Stretcher",
-     "category": "Trainer",
-     "set": "ASC",
-     "number": "196",
-     "inclusion": 1
-    },
-    {
-     "count": 3,
-     "name": "Risky Ruins",
-     "category": "Trainer",
-     "set": "MEG",
-     "number": "127",
-     "inclusion": 0.86
-    },
-    {
-     "count": 3,
-     "name": "Darkness Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "15",
-     "inclusion": 0.94
-    },
-    {
-     "count": 3,
-     "name": "Water Energy",
-     "category": "Energy",
-     "set": "MEE",
-     "number": "11",
-     "inclusion": 1
-    },
-    {
-     "count": 1,
-     "name": "Legacy Energy",
-     "category": "Energy",
-     "set": "TWM",
-     "number": "167",
-     "inclusion": 0.72
-    },
-    {
-     "count": 1,
-     "name": "Bubbly Water Energy",
-     "category": "Energy",
-     "set": "CRI",
-     "number": "84",
-     "inclusion": 0.64
-    },
-    {
-     "count": 1,
-     "name": "Ignition Energy",
-     "category": "Energy",
-     "set": "WHT",
-     "number": "86",
-     "inclusion": 0.92
-    }
-   ]
-  },
-  {
    "id": "ethan-typhlosion",
    "name": "Ethan's Typhlosion",
    "icons": [
     "typhlosion"
    ],
    "players": 42,
-   "share": 0.0106,
-   "winRate": 0.4683,
+   "share": 0.0105,
+   "winRate": 0.491,
    "topCutRate": 0.0476,
-   "score": 31.4,
+   "score": 42.2,
    "list": [
     {
      "count": 4,
@@ -6204,7 +5162,7 @@
      "category": "Pokemon",
      "set": "SSP",
      "number": "21",
-     "inclusion": 0.93
+     "inclusion": 0.9
     },
     {
      "count": 1,
@@ -6212,7 +5170,7 @@
      "category": "Pokemon",
      "set": "ASC",
      "number": "142",
-     "inclusion": 0.79
+     "inclusion": 0.86
     },
     {
      "count": 1,
@@ -6220,7 +5178,7 @@
      "category": "Pokemon",
      "set": "DRI",
      "number": "10",
-     "inclusion": 0.93
+     "inclusion": 0.95
     },
     {
      "count": 4,
@@ -6260,7 +5218,7 @@
      "category": "Trainer",
      "set": "TWM",
      "number": "154",
-     "inclusion": 0.76
+     "inclusion": 0.74
     },
     {
      "count": 4,
@@ -6316,7 +5274,7 @@
      "category": "Trainer",
      "set": "CRI",
      "number": "82",
-     "inclusion": 0.9
+     "inclusion": 0.88
     },
     {
      "count": 1,
@@ -6324,7 +5282,7 @@
      "category": "Trainer",
      "set": "JTG",
      "number": "156",
-     "inclusion": 0.71
+     "inclusion": 0.76
     },
     {
      "count": 1,
@@ -6332,7 +5290,7 @@
      "category": "Trainer",
      "set": "DRI",
      "number": "168",
-     "inclusion": 0.76
+     "inclusion": 0.74
     },
     {
      "count": 2,
@@ -6340,7 +5298,7 @@
      "category": "Trainer",
      "set": "WHT",
      "number": "80",
-     "inclusion": 0.9
+     "inclusion": 0.93
     },
     {
      "count": 2,
@@ -6348,7 +5306,7 @@
      "category": "Trainer",
      "set": "PFL",
      "number": "85",
-     "inclusion": 0.76
+     "inclusion": 0.81
     },
     {
      "count": 5,
@@ -6357,6 +5315,1062 @@
      "set": "MEE",
      "number": "10",
      "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "mega-lucario-ex",
+   "name": "Mega Lucario",
+   "icons": [
+    "lucario-mega"
+   ],
+   "players": 53,
+   "share": 0.0132,
+   "winRate": 0.4682,
+   "topCutRate": 0.0755,
+   "score": 41.6,
+   "list": [
+    {
+     "count": 3,
+     "name": "Riolu",
+     "category": "Pokemon",
+     "set": "PRE",
+     "number": "50",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Riolu",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "76",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Mega Lucario ex",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "77",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dunsparce",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "120",
+     "inclusion": 0.51
+    },
+    {
+     "count": 2,
+     "name": "Dudunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "129",
+     "inclusion": 0.51
+    },
+    {
+     "count": 1,
+     "name": "Dudunsparce ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "121",
+     "inclusion": 0.4
+    },
+    {
+     "count": 2,
+     "name": "Solrock",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "75",
+     "inclusion": 0.94
+    },
+    {
+     "count": 2,
+     "name": "Lunatone",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "74",
+     "inclusion": 0.94
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.28
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 0.98
+    },
+    {
+     "count": 2,
+     "name": "Hilda",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "84",
+     "inclusion": 0.51
+    },
+    {
+     "count": 1,
+     "name": "Judge",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "76",
+     "inclusion": 0.57
+    },
+    {
+     "count": 1,
+     "name": "Wally's Compassion",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "132",
+     "inclusion": 0.45
+    },
+    {
+     "count": 4,
+     "name": "Fighting Gong",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "116",
+     "inclusion": 0.96
+    },
+    {
+     "count": 4,
+     "name": "Premium Power Pro",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "124",
+     "inclusion": 0.96
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 0.47
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.89
+    },
+    {
+     "count": 1,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.91
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.42
+    },
+    {
+     "count": 1,
+     "name": "Secret Box",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "163",
+     "inclusion": 0.17
+    },
+    {
+     "count": 2,
+     "name": "Air Balloon",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "181",
+     "inclusion": 0.72
+    },
+    {
+     "count": 2,
+     "name": "Gravity Mountain",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "177",
+     "inclusion": 0.85
+    },
+    {
+     "count": 7,
+     "name": "Fighting Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "14",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Rocky Fighting Energy",
+     "category": "Energy",
+     "set": "POR",
+     "number": "87",
+     "inclusion": 0.64
+    }
+   ]
+  },
+  {
+   "id": "dragapult-dudunsparce",
+   "name": "Dragapult Dudunsparce",
+   "icons": [
+    "dragapult",
+    "dudunsparce"
+   ],
+   "players": 29,
+   "share": 0.0072,
+   "winRate": 0.4729,
+   "topCutRate": 0.1034,
+   "score": 41.2,
+   "list": [
+    {
+     "count": 4,
+     "name": "Dreepy",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "128",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Drakloak",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "129",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Dragapult ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "130",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Dunsparce",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "120",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Dudunsparce ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "121",
+     "inclusion": 0.83
+    },
+    {
+     "count": 1,
+     "name": "Dudunsparce",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "129",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "95",
+     "inclusion": 0.97
+    },
+    {
+     "count": 2,
+     "name": "Budew",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "16",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "Yveltal",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "88",
+     "inclusion": 0.17
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Crispin",
+     "category": "Trainer",
+     "set": "SCR",
+     "number": "133",
+     "inclusion": 0.97
+    },
+    {
+     "count": 1,
+     "name": "Judge",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "76",
+     "inclusion": 0.69
+    },
+    {
+     "count": 1,
+     "name": "Rosa's Encouragement",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "84",
+     "inclusion": 0.86
+    },
+    {
+     "count": 4,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.97
+    },
+    {
+     "count": 3,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Unfair Stamp",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "165",
+     "inclusion": 0.76
+    },
+    {
+     "count": 2,
+     "name": "Risky Ruins",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "127",
+     "inclusion": 0.9
+    },
+    {
+     "count": 4,
+     "name": "Psychic Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "13",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Darkness Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "15",
+     "inclusion": 0.97
+    },
+    {
+     "count": 3,
+     "name": "Fire Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "10",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "hops-trevenant",
+   "name": "Hop's Trevenant",
+   "icons": [
+    "trevenant"
+   ],
+   "players": 23,
+   "share": 0.0057,
+   "winRate": 0.4792,
+   "topCutRate": 0.087,
+   "score": 40.1,
+   "list": [
+    {
+     "count": 4,
+     "name": "Hop's Phantump",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "95",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Hop's Trevenant",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "96",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Hop's Snorlax",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "117",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Hop's Wooloo",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "135",
+     "inclusion": 0.87
+    },
+    {
+     "count": 1,
+     "name": "Hop's Dubwool",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "136",
+     "inclusion": 0.87
+    },
+    {
+     "count": 1,
+     "name": "Latias ex",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "76",
+     "inclusion": 0.39
+    },
+    {
+     "count": 1,
+     "name": "Hop's Cramorant",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "138",
+     "inclusion": 0.91
+    },
+    {
+     "count": 1,
+     "name": "Lillie's Clefairy ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "56",
+     "inclusion": 0.91
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Genesect",
+     "category": "Pokemon",
+     "set": "SFA",
+     "number": "40",
+     "inclusion": 0.22
+    },
+    {
+     "count": 1,
+     "name": "Hop's Zacian ex",
+     "category": "Pokemon",
+     "set": "JTG",
+     "number": "111",
+     "inclusion": 0.43
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Hassel",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "151",
+     "inclusion": 0.87
+    },
+    {
+     "count": 4,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Hop's Bag",
+     "category": "Trainer",
+     "set": "JTG",
+     "number": "147",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.78
+    },
+    {
+     "count": 1,
+     "name": "Secret Box",
+     "category": "Trainer",
+     "set": "TWM",
+     "number": "163",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.52
+    },
+    {
+     "count": 1,
+     "name": "Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "130",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Hop's Choice Band",
+     "category": "Trainer",
+     "set": "JTG",
+     "number": "148",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Air Balloon",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "181",
+     "inclusion": 0.48
+    },
+    {
+     "count": 4,
+     "name": "Postwick",
+     "category": "Trainer",
+     "set": "JTG",
+     "number": "154",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Telepathic Psychic Energy",
+     "category": "Energy",
+     "set": "POR",
+     "number": "88",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Mist Energy",
+     "category": "Energy",
+     "set": "TEF",
+     "number": "161",
+     "inclusion": 1
+    }
+   ]
+  },
+  {
+   "id": "cinccino-ex",
+   "name": "Cinccino",
+   "icons": [
+    "cinccino"
+   ],
+   "players": 7,
+   "share": 0.0017,
+   "winRate": 0.619,
+   "topCutRate": 0,
+   "score": 39.9,
+   "list": [
+    {
+     "count": 4,
+     "name": "Beldum",
+     "category": "Pokemon",
+     "set": "CRI",
+     "number": "59",
+     "inclusion": 0.86
+    },
+    {
+     "count": 4,
+     "name": "Metang",
+     "category": "Pokemon",
+     "set": "TEF",
+     "number": "114",
+     "inclusion": 0.86
+    },
+    {
+     "count": 1,
+     "name": "Metagross",
+     "category": "Pokemon",
+     "set": "CRI",
+     "number": "61",
+     "inclusion": 0.43
+    },
+    {
+     "count": 2,
+     "name": "Minccino",
+     "category": "Pokemon",
+     "set": "CRI",
+     "number": "72",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Cinccino ex",
+     "category": "Pokemon",
+     "set": "CRI",
+     "number": "73",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Genesect ex",
+     "category": "Pokemon",
+     "set": "BLK",
+     "number": "67",
+     "inclusion": 0.86
+    },
+    {
+     "count": 1,
+     "name": "Meowth ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "62",
+     "inclusion": 0.29
+    },
+    {
+     "count": 1,
+     "name": "Shaymin",
+     "category": "Pokemon",
+     "set": "DRI",
+     "number": "10",
+     "inclusion": 0.29
+    },
+    {
+     "count": 1,
+     "name": "Mega Skarmory ex",
+     "category": "Pokemon",
+     "set": "POR",
+     "number": "55",
+     "inclusion": 0.14
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 0.86
+    },
+    {
+     "count": 4,
+     "name": "Team Rocket's Transceiver",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "178",
+     "inclusion": 0.43
+    },
+    {
+     "count": 2,
+     "name": "Energy Recycler",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "164",
+     "inclusion": 0.57
+    },
+    {
+     "count": 2,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 0.57
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 0.29
+    },
+    {
+     "count": 1,
+     "name": "Buddy-Buddy Poffin",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "144",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 0.43
+    },
+    {
+     "count": 1,
+     "name": "Precious Trolley",
+     "category": "Trainer",
+     "set": "SSP",
+     "number": "185",
+     "inclusion": 0.86
+    },
+    {
+     "count": 1,
+     "name": "Brave Bangle",
+     "category": "Trainer",
+     "set": "WHT",
+     "number": "80",
+     "inclusion": 0.14
+    },
+    {
+     "count": 2,
+     "name": "Battle Cage",
+     "category": "Trainer",
+     "set": "PFL",
+     "number": "85",
+     "inclusion": 0.71
+    },
+    {
+     "count": 1,
+     "name": "Team Rocket's Factory",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "173",
+     "inclusion": 0.14
+    },
+    {
+     "count": 17,
+     "name": "Metal Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "16",
+     "inclusion": 0.86
+    }
+   ]
+  },
+  {
+   "id": "mega-absol-box",
+   "name": "Mega Absol Box",
+   "icons": [
+    "absol-mega",
+    "kangaskhan-mega"
+   ],
+   "players": 25,
+   "share": 0.0062,
+   "winRate": 0.4706,
+   "topCutRate": 0.08,
+   "score": 38.8,
+   "list": [
+    {
+     "count": 3,
+     "name": "Mega Kangaskhan ex",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "104",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Munkidori",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "95",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Mega Absol ex",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "86",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Yveltal",
+     "category": "Pokemon",
+     "set": "MEG",
+     "number": "88",
+     "inclusion": 0.84
+    },
+    {
+     "count": 1,
+     "name": "Bloodmoon Ursaluna ex",
+     "category": "Pokemon",
+     "set": "TWM",
+     "number": "141",
+     "inclusion": 0.16
+    },
+    {
+     "count": 1,
+     "name": "Latias ex",
+     "category": "Pokemon",
+     "set": "SSP",
+     "number": "76",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Pecharunt ex",
+     "category": "Pokemon",
+     "set": "SFA",
+     "number": "39",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Fezandipiti ex",
+     "category": "Pokemon",
+     "set": "ASC",
+     "number": "142",
+     "inclusion": 0.96
+    },
+    {
+     "count": 4,
+     "name": "Boss's Orders",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "114",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Janine's Secret Art",
+     "category": "Trainer",
+     "set": "PRE",
+     "number": "112",
+     "inclusion": 0.76
+    },
+    {
+     "count": 3,
+     "name": "Lillie's Determination",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "119",
+     "inclusion": 0.88
+    },
+    {
+     "count": 2,
+     "name": "Team Rocket's Petrel",
+     "category": "Trainer",
+     "set": "DRI",
+     "number": "176",
+     "inclusion": 0.6
+    },
+    {
+     "count": 4,
+     "name": "Energy Switch",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "115",
+     "inclusion": 1
+    },
+    {
+     "count": 4,
+     "name": "Pokégear 3.0",
+     "category": "Trainer",
+     "set": "SVI",
+     "number": "186",
+     "inclusion": 0.6
+    },
+    {
+     "count": 4,
+     "name": "Ultra Ball",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "131",
+     "inclusion": 1
+    },
+    {
+     "count": 3,
+     "name": "Mega Signal",
+     "category": "Trainer",
+     "set": "MEG",
+     "number": "121",
+     "inclusion": 0.6
+    },
+    {
+     "count": 2,
+     "name": "Night Stretcher",
+     "category": "Trainer",
+     "set": "ASC",
+     "number": "196",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Poké Pad",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "81",
+     "inclusion": 0.32
+    },
+    {
+     "count": 1,
+     "name": "Special Red Card",
+     "category": "Trainer",
+     "set": "CRI",
+     "number": "82",
+     "inclusion": 1
+    },
+    {
+     "count": 1,
+     "name": "Hero's Cape",
+     "category": "Trainer",
+     "set": "TEF",
+     "number": "152",
+     "inclusion": 0.6
+    },
+    {
+     "count": 3,
+     "name": "Lumiose City",
+     "category": "Trainer",
+     "set": "POR",
+     "number": "77",
+     "inclusion": 0.72
+    },
+    {
+     "count": 8,
+     "name": "Darkness Energy",
+     "category": "Energy",
+     "set": "MEE",
+     "number": "15",
+     "inclusion": 1
+    },
+    {
+     "count": 2,
+     "name": "Mist Energy",
+     "category": "Energy",
+     "set": "TEF",
+     "number": "161",
+     "inclusion": 0.8
     }
    ]
   }
